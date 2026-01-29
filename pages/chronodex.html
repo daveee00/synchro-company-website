@@ -14,7 +14,6 @@
 
     <!--tipografia-->
     <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
-
   </head>
   <body>
     <!--
@@ -55,7 +54,7 @@
     -->
     <main>
       <!---->
-      <section class="section-definied hero" style="height: 76vh">
+      <section class="section-definied hero" id="hero-sec">
         <div class="wrap-row">
           <div class="wrap-column">
             <div class="subtitle-caps">chronodex</div>
@@ -69,11 +68,11 @@
       <section class="section-empty"></section>
       <!---->
       <section class="section-flex" id="main-info">
-        <div class="wrap-col-start" style="width: 100%">
+        <div class="wrap-col-start">
           <div class="wrap-row">
             <div class="wrap-col-start">
               <div class="synchro-type">designed for <br />a better future</div>
-              <div class="body-text" style="width: 50ch">
+              <div class="body-text">
                 Chronodex is our new machine developed with advanced Synchro
                 technology. Designed for maximum reliability and performance,
                 this innovative system represents a significant step forward in
@@ -119,7 +118,7 @@
       </section>
       <!---->
       <section class="section-definied" id="design-choice">
-        <div class="wrap-row-end" style="width: 100%; padding-bottom: 2rem">
+        <div class="wrap-row-end full-width">
           <div class="wrap-col-end">
             <div class="subtitle-caps">smooth experience</div>
             <div class="body-text">
@@ -142,12 +141,12 @@
       <div class="section-empty"></div>
 
       <section class="section-flex" id="carosuel">
-        <div class="wrap-col-start" style="width: 100%">
-          <div class="wrap-row" style="width: 100%">
+        <div class="wrap-col-start full-width">
+          <div class="wrap-row full-width">
             <div class="synchro-type">essential design <br />for easy use</div>
           </div>
           <div class="section-empty"></div>
-          <div class="wrap-carousel" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+          <div class="wrap-carousel">
             <!---->
             <div class="card">
               <div class="wrap">
@@ -156,7 +155,7 @@
                     <div class="subtitle-caps">Round edges</div>
                   </div>
                   <div class="wrap-row appear">
-                    <div class="body-text" style="text-align: left">
+                    <div class="body-text">
                       <p>
                         The 0.5mm round edges enchance comfort when handling the
                         product, reducing preccure on contact areas and
@@ -176,7 +175,7 @@
                     <div class="subtitle-caps">stainless steel buttons</div>
                   </div>
                   <div class="wrap-row appear">
-                    <div class="body-text" style="text-align: left">
+                    <div class="body-text">
                       <p>
                         We went with stainless steel for our buttons, to ensure
                         durability with repetaed use and precision with every
@@ -196,7 +195,7 @@
                     <div class="subtitle-caps">textured gray PLA</div>
                   </div>
                   <div class="wrap-row appear">
-                    <div class="body-text" style="text-align: left">
+                    <div class="body-text">
                       <p>
                         the surface of Chronodex is carefully refined to achieve
                         a clean and uniform finish.
@@ -218,7 +217,7 @@
                     <div class="subtitle-caps">dual tone integration</div>
                   </div>
                   <div class="wrap-row appear">
-                    <div class="body-text" style="text-align: left">
+                    <div class="body-text">
                       <p>
                         the translucent white elements allow light to emerge
                         precisely, while black inserts on the surface for
@@ -237,10 +236,7 @@
 
       <!---->
 
-      <section
-        class="section-defined video"
-        style="height: 76vh; margin-top: 4rem"
-      >
+      <section class="section-defined video" id="video-section">
         <video
           class="bg-video"
           src="../public/video/video-chronodex.mp4"
@@ -264,7 +260,7 @@
           </div>
 
           <div class="wrap-column">
-            <div class="specific" style="border-top: var(--border)">
+            <div class="specific first-spec">
               <div class="subtitle box-left">ESP32-S£</div>
               <div class="body-text box-right">
                 <p>
@@ -394,13 +390,16 @@
             All rights reserved
           </div>
           <div style="font-size: 0.8rem; font-weight: 100">
-            <span class="footer-link"><a href="../pages/privacy.html">Data Privacy</a></span
+            <span class="footer-link"
+              ><a href="../pages/privacy.html">Data Privacy</a></span
             ><span>&ensp;|&ensp;</span
             ><span class="footer-link"
               ><a href="../pages/terms.html">Terms and Conditions</a></span
             >
             <span>&ensp;|&ensp;</span
-            ><span class="footer-link"><a href="../pages/form.html">Techincal Support</a></span>
+            ><span class="footer-link"
+              ><a href="../pages/form.html">Techincal Support</a></span
+            >
           </div>
         </div>
         <div class="right">
