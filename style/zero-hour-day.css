@@ -10,12 +10,12 @@
 .wrap-col-space {
   width: 100%;
 }
-
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 #title-card {
-    background: url(../public/zhd/cabina.png);
-    background-size: cover;
+  background: url(../public/zhd/cabina.png);
+  background-size: cover;
+  height: 76vh;
 }
-
 
 #title-card .img-wrap {
   width: 100%;
@@ -23,7 +23,10 @@
 }
 #title-card .title {
   text-align: left;
+  line-height: 1;
 }
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 #intro .img-wrap {
   height: 40vh;
@@ -33,6 +36,8 @@
 #intro .body-text {
   width: 50ch;
 }
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 #chrono .img-wrap {
   flex: 1;
@@ -44,6 +49,18 @@
   object-fit: fill;
 }
 
+#chrono .body-text {
+  width: 50ch;
+}
+
+#chrono-img {
+  background: url(../public/chronodex-page/brochure2.png);
+  background-position: 0;
+  background-size: cover;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
 #use .wrap-col-start {
   width: 100%;
   gap: 0;
@@ -53,7 +70,10 @@
   grid-template-columns: repeat(4, 1fr);
   height: 32rem;
   width: 100%;
-  
+}
+
+#use .body-text {
+  width: 50ch;
 }
 
 #use .wrap-grid .card {
@@ -120,10 +140,17 @@
 }
 
 #use .wrap-grid .card .wrap-text .body-text::first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-/********************************/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#video-section {
+  height: 78vh;
+  margin-top: 4rem;
+  width: calc(100vw - 24px);
+}
+
 .video .bg-video {
   inset: 0;
   width: 100vw;
@@ -135,7 +162,11 @@
   cursor: pointer;
 }
 
-/**/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#explained .wrap-row-start {
+  width: 100%;
+}
 
 #explained .wrap-row-space {
   height: 100%;
@@ -146,15 +177,25 @@
 
 #explained .synchro-type {
   width: fit-content;
+  width: 15ch;
 }
 
+#explained .body-text {
+  width: 70ch;
+}
 #explained .img-wrap {
   flex-grow: 1;
   height: 100%;
 }
 
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
 #webapp .wrap-row-space {
   width: 100%;
+}
+
+#webapp .body-text {
+  width: 70ch;
 }
 
 #webapp .wrap-col-end {

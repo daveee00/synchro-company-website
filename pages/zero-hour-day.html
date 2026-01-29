@@ -20,31 +20,51 @@
     <!--
     HEADER
     -->
-      <header>
-        <div class="header-wrap">
-          <div class="link-header">
-            <button id="logo" class="button-text" onclick="location.href='../index.html'">
-              <img src="../public/recurrent/logo.svg" alt="logo" />
-            </button>
-          </div>
-
-          <div class="link-header title-card">
-            <button class="button-text light" onclick="location.href='../pages/about.html'">about</button>
-
-            <button class="button-text light" onclick="location.href='../pages/form.html'">contact us</button>
-          </div>
+    <header>
+      <div class="header-wrap">
+        <div class="link-header">
+          <button
+            id="logo"
+            class="button-text"
+            onclick="location.href = '../index.html'"
+          >
+            <img src="../public/recurrent/logo.svg" alt="logo" />
+          </button>
         </div>
-      </header>
+
+        <div class="link-header title-card">
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/about.html'"
+          >
+            about
+          </button>
+
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/form.html'"
+          >
+            contact us
+          </button>
+        </div>
+      </div>
+    </header>
     <!--
     MAIN
     -->
     <main>
-      <section class="section-definied" id="title-card" style="height: 76vh;">
+      <section class="section-definied" id="title-card">
         <div class="wrap-col-space">
           <div class="img-wrap">
-            <img src="../public/SVG/complete-final.svg" alt="" />
+            <img
+              src="../public/SVG/complete-final.svg"
+              alt="united nation collaboration logo"
+            />
           </div>
-          <div class="title">one world. <br> one time.</div>
+          <div class="title">
+            one world. <br />
+            one time.
+          </div>
         </div>
       </section>
       <!---->
@@ -55,7 +75,10 @@
         <div class="wrap-col-end">
           <div class="wrap-row-space">
             <div class="img-wrap">
-              <img src="../public/recurrent/logo-zhd-white.svg" alt="" />
+              <img
+                src="../public/recurrent/logo-zhd-white.svg"
+                alt="logo zero hour day"
+              />
             </div>
             <div class="body-text wrap-col-end">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -74,9 +97,9 @@
       <!---->
       <section class="section-flex" id="chrono">
         <div class="wrap-row-space">
-          <div class="body-text" style="width: 50ch;">
-            With CHRONODEX, everyone measures the way they generally spend
-            their time, how they choose to organize it and integrate it with the
+          <div class="body-text">
+            With CHRONODEX, everyone measures the way they generally spend their
+            time, how they choose to organize it and integrate it with the
             rythms of society.
             <br />
             <br />The definition of a new and unified timezone aims to find the
@@ -89,9 +112,7 @@
             of an ever-chaning society. Even a perfect measure today, might not
             me adequate tomorrow.
           </div>
-          <div class="img-wrap dark-bg" style="background: url(../public/chronodex-page/brochure2.png); background-position: 0; background-size: cover;">
-            
-          </div>
+          <div class="img-wrap dark-bg" id="chrono-img"></div>
         </div>
       </section>
       <div class="section-empty"></div>
@@ -101,7 +122,7 @@
         <div class="wrap-col-start">
           <div class="synchro-type">how to use chronodex</div>
           <div class="section-empty"></div>
-          <div class="body-text" style="width: 50ch;">
+          <div class="body-text">
             CJHRONODEX makes the voting process extremely intuitive, to avoid
             waisting time at the polls. the clock-like shape of the machine
             helps with a better understading of its workings. here we have the
@@ -116,30 +137,41 @@
           <div class="wrap-grid">
             <div class="card">
               <div class="img-wrap"></div>
-              <div class="wrap-text ">
+              <div class="wrap-text">
                 <div class="subtitle-caps">enter hours</div>
-                <div class="body-text">press the chosen activity button, then turn the knob to add as many hours as needed. <br>Repeat the process for all other activities</div>
+                <div class="body-text">
+                  press the chosen activity button, then turn the knob to add as
+                  many hours as needed. <br />Repeat the process for all other
+                  activities
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="img-wrap"></div>
-              <div class="wrap-text ">
+              <div class="wrap-text">
                 <div class="subtitle-caps">delete hours</div>
-                <div class="body-text">turn the knob backward to delete hours.</div>
+                <div class="body-text">
+                  turn the knob backward to delete hours.
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="img-wrap"></div>
-              <div class="wrap-text ">
+              <div class="wrap-text">
                 <div class="subtitle-caps">submit</div>
-                <div class="body-text">press the central button to save the hours of your routine.</div>
+                <div class="body-text">
+                  press the central button to save the hours of your routine.
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="img-wrap"></div>
-              <div class="wrap-text ">
+              <div class="wrap-text">
                 <div class="subtitle-caps">view data</div>
-                <div class="body-text">scan te QR code on the machine to view your score. <br>zerohourday.org</div>
+                <div class="body-text">
+                  scan te QR code on the machine to view your score.
+                  <br />zerohourday.org
+                </div>
               </div>
             </div>
           </div>
@@ -147,10 +179,7 @@
       </section>
       <!---->
 
-      <section
-        class="section-defined video"
-        style="height: 78vh; margin-top: 4rem; width: calc(100vw - 24px);"
-      >
+      <section class="section-defined video" id="video-section">
         <video
           class="bg-video"
           src="../public/video/video-chronodex.mp4"
@@ -165,10 +194,10 @@
       <!---->
 
       <section class="section-definied" id="explained">
-        <div class="wrap-row-start" style="width: 100%">
+        <div class="wrap-row-start">
           <div class="wrap-col-end">
-            <div class="synchro-type" style="width: 15ch">why alignment</div>
-            <div class="body-text" style="width: 70ch">
+            <div class="synchro-type">why alignment</div>
+            <div class="body-text">
               With CHRONODEX, everyone measures the way they generally spend
               their time, how they choose to organize it and integrate it with
               the rythms of society.
@@ -194,7 +223,7 @@
         <div class="wrap-row-space">
           <div class="wrap-col-end">
             <div class="synchro-type">keep track of voting</div>
-            <div class="body-text" style="width: 70ch">
+            <div class="body-text">
               <p>
                 On February 3rd, voters of age will be required to go the polls
                 to contibite to the global rank. While waiting and after voting,
@@ -220,9 +249,7 @@
               >
                 go to webapp
               </button>
-              <button
-                class="button-secondary button-text light"
-              >
+              <button class="button-secondary button-text light">
                 find polls near you
               </button>
             </div>
@@ -245,13 +272,16 @@
             All rights reserved
           </div>
           <div style="font-size: 0.8rem; font-weight: 100">
-            <span class="footer-link"><a href="../pages/privacy.html">Data Privacy</a></span
+            <span class="footer-link"
+              ><a href="../pages/privacy.html">Data Privacy</a></span
             ><span>&ensp;|&ensp;</span
             ><span class="footer-link"
               ><a href="../pages/terms.html">Terms and Conditions</a></span
             >
             <span>&ensp;|&ensp;</span
-            ><span class="footer-link"><a href="../pages/form.html">Techincal Support</a></span>
+            ><span class="footer-link"
+              ><a href="../pages/form.html">Techincal Support</a></span
+            >
           </div>
         </div>
         <div class="right">
@@ -300,6 +330,5 @@
         hideControls();
       });
     </script>
-
   </body>
 </html>
