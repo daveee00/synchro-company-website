@@ -14,13 +14,8 @@
 
     <!--tipografia-->
     <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
-
-    <style>
-      button {
-        cursor: pointer;
-      }
-    </style>
   </head>
+
   <body>
     <!--
     HEADER
@@ -54,14 +49,16 @@
         </div>
       </div>
     </header>
+
     <!--
     MAIN
     -->
     <main>
       <section
         class="section-definied product-presentation"
+        id="chronodex-hero"
         style="
-          background: url(./public/chronodex-page/brochure2.png);
+          background: url(&quot;./public/chronodex-page/brochure2.png&quot;);
           background-position: center;
           background-size: cover;
         "
@@ -89,10 +86,19 @@
           </div>
         </div>
       </section>
+
       <!--
       ============================================
       -->
-      <section class="section-definied product-presentation dark-bg">
+      <section
+        class="section-definied product-presentation"
+        id="workflow-hero"
+        style="
+          background: url(./public/chronodex-page/brochure2.png);
+          background-position: center;
+          background-size: cover;
+        "
+      >
         <div class="wrap-row">
           <div class="wrap-column">
             <div class="synchro-type">workflow</div>
@@ -116,10 +122,19 @@
           </div>
         </div>
       </section>
+
       <!--
       ============================================
       -->
-      <section class="section-definied product-presentation dark-bg">
+      <section
+        class="section-definied product-presentation"
+        id="deskflow-hero"
+        style="
+          background: url(./public/chronodex-page/brochure2.png);
+          background-position: center;
+          background-size: cover;
+        "
+      >
         <div class="wrap-row">
           <div class="wrap-column">
             <div class="synchro-type">deskflow</div>
@@ -143,10 +158,19 @@
           </div>
         </div>
       </section>
+
       <!--
       ============================================
       -->
-      <section class="section-definied product-presentation dark-bg">
+      <section
+        class="section-definied product-presentation"
+        id="id-hero"
+        style="
+          background: url(./public/chronodex-page/brochure2.png);
+          background-position: center;
+          background-size: cover;
+        "
+      >
         <div class="wrap-row">
           <div class="wrap-column">
             <div class="synchro-type">Synch-id</div>
@@ -170,17 +194,19 @@
           </div>
         </div>
       </section>
+
       <!--
       ============================================
       -->
-
       <div class="section-empty"></div>
-      <section class="section-definied" id="zero-hour-section" style="border-top: var(--border);">
+
+      <section class="section-definied" id="zero-hour-section">
         <div class="wrap-row">
           <div class="img-wrap">
             <img src="./public/recurrent/logo-zhd-white.svg" alt="" />
           </div>
-          <div class="wrap-column" style="width: fit-content; gap: 1rem">
+
+          <div class="wrap-column zhd-content">
             <div class="subtitle">February 3rd, 2026</div>
             <div class="body-text">
               We're proud partners of United Nations in the effort to better the
@@ -204,11 +230,13 @@
           </div>
         </div>
       </section>
+
       <!--
       ============================================
       -->
       <section class="section-empty"></section>
     </main>
+
     <!--
     FOOTER
     -->
@@ -216,19 +244,23 @@
       <div class="wrap">
         <div class="left">
           copyright © 2026 SYNCHRO
-          <div style="font-size: 0.8rem; font-weight: 100">
-            All rights reserved
-          </div>
-          <div style="font-size: 0.8rem; font-weight: 100">
-            <span class="footer-link"><a href="./pages/privacy.html">Data Privacy</a></span
+
+          <div class="footer-small">All rights reserved</div>
+
+          <div class="footer-small">
+            <span class="footer-link"
+              ><a href="./pages/privacy.html">Data Privacy</a></span
             ><span>&ensp;|&ensp;</span
             ><span class="footer-link"
               ><a href="#">Terms and Conditions</a></span
             >
             <span>&ensp;|&ensp;</span
-            ><span class="footer-link"><a href="./pages/form.html">Techincal Support</a></span>
+            ><span class="footer-link"
+              ><a href="./pages/form.html">Techincal Support</a></span
+            >
           </div>
         </div>
+
         <div class="right">
           GENEVA, CH <br />
           info@synchro.com <br />

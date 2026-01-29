@@ -1,15 +1,40 @@
-.product-presentation {
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
+/* ===========================
+   INDEX.CSS
+   =========================== */
 
+.product-presentation {
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
 }
 
-.img-wrap{
-    height: 16rem;
-    width: 16rem;
+.img-wrap {
+  height: 16rem;
+  width: 16rem;
 }
 
 #zero-hour-section {
-    background: none;
+  background: none;
+}
+
+/* ===========================
+   Regole migrate da CSS inline
+   =========================== */
+
+html body button {
+  cursor: pointer;
+}
+
+#zero-hour-section {
+  border-top: var(--border);
+}
+
+#zero-hour-section .wrap-column.zhd-content {
+  width: fit-content;
+  gap: 1rem;
+}
+
+footer .wrap .left .footer-small {
+  font-size: 0.8rem;
+  font-weight: 100;
 }
