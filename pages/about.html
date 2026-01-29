@@ -20,28 +20,42 @@
     <!--
     HEADER
     -->
-      <header>
-        <div class="header-wrap">
-          <div class="link-header">
-            <button id="logo" class="button-text" onclick="location.href='../index.html'">
-              <img src="../public/recurrent/logo.svg" alt="logo" />
-            </button>
-          </div>
-
-          <div class="link-header title-card">
-            <button class="button-text light" onclick="location.href='../pages/about.html'">about</button>
-
-            <button class="button-text light" onclick="location.href='../pages/form.html'">contact us</button>
-          </div>
+    <header>
+      <div class="header-wrap">
+        <div class="link-header">
+          <button
+            id="logo"
+            class="button-text"
+            onclick="location.href = '../index.html'"
+          >
+            <img src="../public/recurrent/logo.svg" alt="logo" />
+          </button>
         </div>
-      </header>
+
+        <div class="link-header title-card">
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/about.html'"
+          >
+            about
+          </button>
+
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/form.html'"
+          >
+            contact us
+          </button>
+        </div>
+      </div>
+    </header>
     <!--
     MAIN
     -->
     <main>
       <section class="section-definied" id="bg-raggiera">
-        <div class="wrap-row-end" style="width: 100%">
-          <div class="wrap-column" style="width: 80ch; gap: 2rem">
+        <div class="wrap-row-end">
+          <div class="wrap-column">
             <div class="synchro-type">about synchro</div>
           </div>
         </div>
@@ -50,8 +64,8 @@
       <div class="section-empty"></div>
       <div class="section-empty"></div>
       <!---->
-      <section class="section-flex">
-        <div class="body-text" style="width: 70ch">
+      <section class="section-flex" id="about-synchro">
+        <div class="body-text">
           <p>
             Founded in September 2024 under the auspices of the United Nations,
             SYNCHRO was established to address one of the most pressing
@@ -77,16 +91,8 @@
       <section class="section-flex" id="vision-mission">
         <div class="wrap-grid">
           <div class="synchro-type">our vision</div>
-          <div
-            class="body-text"
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              flex: 1;
-            "
-          >
-            <p style="width: 50ch">
+          <div class="body-text">
+            <p>
               We aim at becoming a driving force for change toward a better and
               unified world, where time evolves into a universal resource
               serving the collective progress.
@@ -95,16 +101,8 @@
         </div>
         <div class="wrap-grid">
           <div class="synchro-type">our mission</div>
-          <div
-            class="body-text"
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              flex: 1;
-            "
-          >
-            <p style="width: 50ch">
+          <div class="body-text">
+            <p>
               We work to provide tools and methodologies to ensure meticulous
               time measurement and management, enabling the optimization of
               every aspect of daily life.
@@ -114,18 +112,6 @@
       </section>
       <!---->
       <div class="section-empty"></div>
-      <!---->
-      <section class="section-flex" id="payoff">
-        <div class="wrap-row-end">
-          <div class="wrap-col-start" style="width: fit-content">
-            <div class="subtitle-caps">time for change</div>
-            <div class="body-text">
-              This statement encapsulates our deep commitment, highlighting
-              our dedication to transforming humanity’s relationship with time.
-            </div>
-          </div>
-        </div>
-      </section>
       <!---->
       <section class="section-flex" id="values">
         <div class="wrap-row"><div class="synchro-type">Our values</div></div>
@@ -163,9 +149,17 @@
         </div>
       </section>
       <!---->
-      <div class="section-empty"></div>
-      <div class="section-empty"></div>
-      <!---->
+      <section class="section-flex" id="payoff">
+        <div class="wrap-row-end">
+          <div class="wrap-col-start">
+            <div class="subtitle-caps">time for change</div>
+            <div class="body-text">
+              This statement encapsulates our deep commitment, highlighting our
+              dedication to transforming humanity’s relationship with time.
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!--
     FOOTER
@@ -178,13 +172,16 @@
             All rights reserved
           </div>
           <div style="font-size: 0.8rem; font-weight: 100">
-            <span class="footer-link"><a href="../pages/privacy.html">Data Privacy</a></span
+            <span class="footer-link"
+              ><a href="../pages/privacy.html">Data Privacy</a></span
             ><span>&ensp;|&ensp;</span
             ><span class="footer-link"
               ><a href="../pages/terms.html">Terms and Conditions</a></span
             >
             <span>&ensp;|&ensp;</span
-            ><span class="footer-link"><a href="../pages/form.html">Techincal Support</a></span>
+            ><span class="footer-link"
+              ><a href="../pages/form.html">Techincal Support</a></span
+            >
           </div>
         </div>
         <div class="right">
