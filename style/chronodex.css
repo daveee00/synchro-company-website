@@ -1,0 +1,248 @@
+.hero {
+  background: url(../public/chronodex-page//brochure2.png);
+}
+
+.grid-3 {
+  margin-top: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  height: 40rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.card .img-wrap {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .subtitle-caps {
+  text-align: center;
+}
+
+.card .body-text {
+  text-align: center;
+  width: 40ch;
+  margin-top: 1rem;
+}
+
+#design-choice {
+  background: url(../public/chronodex-page/design.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*section CAROSELLO COMPONENTI*/
+
+/*
+#carousel {
+  overflow: hidden;
+}
+
+.wrap-carousel .card {
+  background: var(--section-bg);
+  width: 24rem;
+  flex-shrink: 0;
+}
+
+.wrap-carousel {
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 10px 0;
+
+  scrollbar-width: none; 
+}
+
+.wrap-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.wrap-carousel .card {
+  background: var(--section-bg);
+  min-width: 32rem; 
+  height: 18rem;
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .wrap {
+  padding: 20px;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.card .wrap .wrap-column {
+  height: 100%;
+}
+
+.card .appear {
+  display: block;
+}
+
+.card:hover .appear {
+  display: block;
+}
+
+#carosuel .card {
+  opacity: 0.5;
+  transition: var(--animation);
+}
+
+#carosuel .card:hover {
+  opacity: 1;
+}
+*/
+
+/**/
+
+#carosuel .wrap-carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+#carosuel .wrap-carousel .card {
+flex: 1;
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: start;
+padding: 0;
+}
+
+#carosuel .wrap-carousel .card .wrap {
+width: 100%;
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: start;
+}
+#carosuel .wrap-carousel .card .wrap .body-text {
+  width: 50ch;
+}
+#carosuel .wrap-carousel .card .wrap p {
+  width: 100%;
+}
+
+/********************************/
+.video .bg-video {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* importante: devono funzionare hover/click/dblclick sul video */
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/********************************/
+
+#techs .wrap-column {
+  width: 100%;
+  height: 100%;
+}
+
+#techs .synchro-type {
+    margin-bottom: 4rem;
+}
+
+#techs .specific {
+  width: 100%;
+  height: fit-content;
+  padding: 1.2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  border-bottom: var(--border);
+}
+
+#techs .specific .subtitle {
+    font-size: 1rem;
+}
+
+#techs .specific .body-text {
+  font-size: 1rem;
+} 
+
+#techs .specific .box-left {
+    width: 40ch;
+}
+
+#techs .specific .box-right {
+    flex: 1;
+}
+
+#techs .specific .box-right p {
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================*/
+
+nav {
+  width: 60%;
+  height: 2.8rem;
+  position: fixed;
+  z-index: 200;
+  margin-bottom: 4vh;
+  background: var(--secondary-color);
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  color: var(--primary-color);
+}
+
+#prod-sections {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  will-change: opacity, transform;
+}

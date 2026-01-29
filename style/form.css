@@ -1,0 +1,290 @@
+.form-fill {
+  height: calc(84vh - 80px - 8vh);
+  background-size: cover;
+  padding: 40px;
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: fit-content;
+  overflow: scroll;
+}
+
+.hero {
+  margin-top: 10vh;
+  background: url(./public/images/hero.png);
+  background-size: cover;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.block input {
+  width: 32vw;
+  height: 2rem;
+  margin-top: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 100;
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.form-fill {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.summary {
+  margin-top: 2rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  color: var(--secondary-color);
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--secondary-color);
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: var(--secondary-color);
+}
+
+.summary .body-text {
+  width: 50%;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.selector {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 12px;
+  color: var(--secondary-color);
+  padding: 4px;
+}
+
+.selector label {
+  color: var(--primary-color);
+  width: fit-content;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  height: 100%;
+}
+
+.selection-box {
+  width: fit-content;
+  flex: 1;
+  padding: 4px 0;
+  font-size: 1rem;
+  background: none;
+}
+
+.input-box {
+  background: none;
+  border: none;
+  border-bottom: var(--border);
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.block .body-text {
+    width: 32vw;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.block .body-text p {
+    width: 80%;
+}
+
+.form-btn {
+    width: 32vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-btn input {
+    border: var(--border);
+    background: none;
+    width: fit-content;
+    padding: 0 20px;
+    display: flex;
+}
+
+.form-btn input:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.more-about {
+    font-size: 0.8rem;
+    width: 50ch;
+    margin-top: 1.8rem;
+}
+
+
+
+
+
+
+
+/* Inline field error */
+.field-error {
+  font-size: 0.75rem;
+  margin-top: 0.35rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.02em;
+  color: #ff6b6b;
+}
+
+/* Top error message */
+.form-top-error {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+/* Red underline for invalid fields */
+#product-request [aria-invalid="true"] {
+  border-bottom: 1px solid #ff6b6b !important;
+}
+
+/* Checkbox flash red */
+.checkmark.checkbox-error {
+  border-color: #ff6b6b !important;
+}
+
+/* Success overlay */
+.form-success-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.form-success-card {
+  width: min(520px, calc(100% - 48px));
+  border: var(--border);
+  background: var(--primary-color);
+  padding: 18px 20px;
+}
+
+.form-success-text {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  font-weight: 200;
+  line-height: 1.35;
+}
+
+/* Highlight select when user tries to use fields too early */
+.select-warning {
+  border-bottom: 2px solid #ff6b6b !important;
+  box-shadow: 0 2px 0 #ff6b6b;
+  transition: all 0.2s ease;
+}
+
+
+/* Password toggle wrapper */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Eye button */
+.password-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  opacity: 0.7;
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}
+
+/* Fade utility (works for top + field errors) */
+.fade-msg {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+.fade-msg.is-hidden {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+/* Select highlight (already used) */
+.select-warning {
+  border-bottom: 2px solid #ff6b6b !important;
+  box-shadow: 0 2px 0 #ff6b6b;
+  transition: all 0.2s ease;
+}
+
+/* Checkbox flash red (already used) */
+.checkmark.checkbox-error {
+  border-color: #ff6b6b !important;
+}
+
+/* Password wrapper + button (from previous step) */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+.password-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  opacity: 0.7;
+}
+.password-toggle:hover {
+  opacity: 1;
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 170.6 156.5">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #867db0;
+      }
+
+      .st0, .st1, .st2 {
+        stroke: #f0f0f0;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        stroke-width: .8px;
+      }
+
+      .st1, .st2 {
+        fill: none;
+      }
+
+      .st2 {
+        stroke-width: 1.2px;
+      }
+
+      .st3 {
+        fill: #f0f0f0;
+      }
+    </style>
+  </defs>
+  <g id="guide">
+    <g>
+      <rect class="st2" x="145.3" y="63.4" width="10.8" height="29.8" rx="2.3" ry="2.3"/>
+      <rect class="st1" x="64.6" y="47.3" width="29.8" height="14.9"/>
+      <g>
+        <circle class="st1" cx="59.3" cy="72.9" r="3.3"/>
+        <circle class="st1" cx="99.6" cy="72.9" r="3.3"/>
+        <circle class="st1" cx="86.2" cy="72.9" r="3.3"/>
+        <circle class="st1" cx="72.7" cy="72.9" r="3.3"/>
+      </g>
+      <circle class="st2" cx="79.4" cy="78.3" r="65"/>
+      <rect class="st3" x="78.9" y="18.1" width="1.2" height="8.3"/>
+      <rect class="st3" x="64.4" y="20.1" width="1.2" height="8.3" transform="translate(-4.1 17.6) rotate(-15)"/>
+      <rect class="st3" x="50.9" y="25.6" width="1.2" height="8.3" transform="translate(-8 29.7) rotate(-30)"/>
+      <rect class="st3" x="39.2" y="34.6" width="1.2" height="8.3" transform="translate(-15.7 39.5) rotate(-45)"/>
+      <rect class="st3" x="30.4" y="46.1" width="1.2" height="8.3" transform="translate(-28 52) rotate(-60)"/>
+      <rect class="st3" x="24.8" y="59.5" width="1.2" height="8.3" transform="translate(-42.7 71.7) rotate(-75)"/>
+      <rect class="st3" x="19.4" y="77.7" width="8.3" height="1.2"/>
+      <rect class="st3" x="21.3" y="92.2" width="8.3" height="1.2" transform="translate(-23.1 9.8) rotate(-15)"/>
+      <rect class="st3" x="26.8" y="105.5" width="8.3" height="1.2" transform="translate(-48.9 29.7) rotate(-30)"/>
+      <rect class="st3" x="35.7" y="117.1" width="8.3" height="1.2" transform="translate(-71.5 62.7) rotate(-45)"/>
+      <rect class="st3" x="47.3" y="126.2" width="8.3" height="1.2" transform="translate(-84.1 108) rotate(-60)"/>
+      <rect class="st3" x="60.9" y="131.6" width="8.3" height="1.2" transform="translate(-79.5 160.8) rotate(-75)"/>
+      <rect class="st3" x="78.9" y="130.1" width="1.2" height="8.3"/>
+      <rect class="st3" x="93.4" y="128.1" width="1.2" height="8.3" transform="translate(-31 28.8) rotate(-15)"/>
+      <rect class="st3" x="106.8" y="122.5" width="1.2" height="8.3" transform="translate(-48.9 70.7) rotate(-30)"/>
+      <rect class="st3" x="118.5" y="113.8" width="1.2" height="8.3" transform="translate(-48.5 118.8) rotate(-45)"/>
+      <rect class="st3" x="127.4" y="102.1" width="1.2" height="8.3" transform="translate(-28 164) rotate(-60)"/>
+      <rect class="st3" x="132.9" y="88.6" width="1.2" height="8.3" transform="translate(9.4 197.7) rotate(-75)"/>
+      <rect class="st3" x="131.3" y="77.7" width="8.3" height="1.2"/>
+      <rect class="st3" x="129.4" y="63.2" width="8.3" height="1.2" transform="translate(-12 36.7) rotate(-15)"/>
+      <rect class="st3" x="123.8" y="49.7" width="8.3" height="1.2" transform="translate(-8 70.7) rotate(-30)"/>
+      <rect class="st3" x="114.9" y="38.1" width="8.3" height="1.2" transform="translate(7.5 95.5) rotate(-45)"/>
+      <rect class="st3" x="103.3" y="29.2" width="8.3" height="1.2" transform="translate(27.9 108) rotate(-60)"/>
+      <rect class="st3" x="89.7" y="23.6" width="8.3" height="1.2" transform="translate(46.2 108.6) rotate(-75)"/>
+      <rect class="st3" x="72.5" y="26.9" width="1.1" height="5.2" transform="translate(-3.2 9.8) rotate(-7.5)"/>
+      <rect class="st3" x="60.1" y="30.2" width="1.1" height="5.2" transform="translate(-7.9 25.7) rotate(-22.5)"/>
+      <rect class="st3" x="49" y="36.6" width="1.1" height="5.2" transform="translate(-13.6 38.3) rotate(-37.5)"/>
+      <rect class="st3" x="39.9" y="45.7" width="1.1" height="5.2" transform="translate(-22.5 51) rotate(-52.5)"/>
+      <rect class="st3" x="33.4" y="56.9" width="1.1" height="5.2" transform="translate(-34 68.1) rotate(-67.5)"/>
+      <rect class="st3" x="30.1" y="69.3" width="1.1" height="5.2" transform="translate(-44.6 92.9) rotate(-82.5)"/>
+      <rect class="st3" x="28.1" y="84.2" width="5.2" height="1.1" transform="translate(-10.8 4.7) rotate(-7.5)"/>
+      <rect class="st3" x="31.4" y="96.6" width="5.2" height="1.1" transform="translate(-34.6 20.4) rotate(-22.5)"/>
+      <rect class="st3" x="37.8" y="107.8" width="5.2" height="1.1" transform="translate(-57.6 47) rotate(-37.5)"/>
+      <rect class="st3" x="46.8" y="116.8" width="5.2" height="1.1" transform="translate(-73.8 85.1) rotate(-52.5)"/>
+      <rect class="st3" x="58" y="123.4" width="5.2" height="1.1" transform="translate(-77.1 132.5) rotate(-67.5)"/>
+      <rect class="st3" x="70.5" y="126.7" width="5.2" height="1.1" transform="translate(-62.6 183.1) rotate(-82.5)"/>
+      <rect class="st3" x="85.4" y="124.5" width="1.1" height="5.2" transform="translate(-15.9 12.3) rotate(-7.5)"/>
+      <rect class="st3" x="97.8" y="121.2" width="1.1" height="5.2" transform="translate(-39.9 47.1) rotate(-22.5)"/>
+      <rect class="st3" x="109" y="114.7" width="1.1" height="5.2" transform="translate(-48.8 91) rotate(-37.5)"/>
+      <rect class="st3" x="118" y="105.7" width="1.1" height="5.2" transform="translate(-39.5 136.4) rotate(-52.5)"/>
+      <rect class="st3" x="124.5" y="94.6" width="1.1" height="5.2" transform="translate(-12.6 175.5) rotate(-67.5)"/>
+      <rect class="st3" x="127.7" y="82.1" width="1.1" height="5.2" transform="translate(27.5 200.8) rotate(-82.5)"/>
+      <rect class="st3" x="125.7" y="71.4" width="5.2" height="1.1" transform="translate(-8.3 17.4) rotate(-7.5)"/>
+      <rect class="st3" x="122.4" y="58.9" width="5.2" height="1.1" transform="translate(-13.2 52.4) rotate(-22.5)"/>
+      <rect class="st3" x="115.9" y="47.9" width="5.2" height="1.1" transform="translate(-5 82.2) rotate(-37.5)"/>
+      <rect class="st3" x="106.8" y="38.8" width="5.2" height="1.1" transform="translate(11.6 102.2) rotate(-52.5)"/>
+      <rect class="st3" x="95.8" y="32.3" width="5.2" height="1.1" transform="translate(30.4 111.2) rotate(-67.5)"/>
+      <rect class="st3" x="83.3" y="28.9" width="5.2" height="1.1" transform="translate(45.5 110.8) rotate(-82.5)"/>
+      <circle class="st0" cx="79.5" cy="99.8" r="10.9"/>
+      <circle class="st1" cx="79.5" cy="99.9" r="10.8"/>
+    </g>
+  </g>
+</svg>

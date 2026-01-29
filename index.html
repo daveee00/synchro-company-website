@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--metadati-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--generali-->
+    <title>SYNCHRO©</title>
+
+    <!--fogli di stile-->
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/variables.css" />
+
+    <!--tipografia-->
+    <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
+
+    <style>
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    HEADER
+    -->
+    <header>
+      <div class="header-wrap">
+        <div class="link-header">
+          <button
+            id="logo"
+            class="button-text"
+            onclick="location.href = './index.html'"
+          >
+            <img src="./public/recurrent/logo.svg" alt="logo" />
+          </button>
+        </div>
+
+        <div class="link-header title-card" id="title-card">
+          <button
+            class="button-text light"
+            onclick="location.href = './pages/about.html'"
+          >
+            about
+          </button>
+
+          <button
+            class="button-text light"
+            onclick="location.href = './pages/form.html'"
+          >
+            contact us
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--
+    MAIN
+    -->
+    <main>
+      <section
+        class="section-definied product-presentation"
+        style="
+          background: url(./public/chronodex-page/brochure2.png);
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="wrap-row">
+          <div class="wrap-column">
+            <div class="synchro-type">chronodex</div>
+            <div class="subtitle">Time. For everyone</div>
+          </div>
+          <div class="wrap-column">
+            <div class="wrap-row">
+              <button
+                class="button-text dark"
+                onclick="location.href = './pages/chronodex.html'"
+              >
+                learn more
+              </button>
+              <button
+                class="button-secondary button-text light"
+                onclick="location.href = './pages/chronodex.html#techs-land'"
+              >
+                tech specifics
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      ============================================
+      -->
+      <section class="section-definied product-presentation dark-bg">
+        <div class="wrap-row">
+          <div class="wrap-column">
+            <div class="synchro-type">workflow</div>
+            <div class="subtitle">Tag di prodotto</div>
+          </div>
+          <div class="wrap-column">
+            <div class="wrap-row">
+              <button
+                class="button-text dark"
+                onclick="location.href = './pages/product2.html'"
+              >
+                learn more
+              </button>
+              <button
+                class="button-secondary button-text light"
+                onclick="location.href = './pages/product2.html#techs-land'"
+              >
+                tech specifics
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      ============================================
+      -->
+      <section class="section-definied product-presentation dark-bg">
+        <div class="wrap-row">
+          <div class="wrap-column">
+            <div class="synchro-type">deskflow</div>
+            <div class="subtitle">Tag di prodotto</div>
+          </div>
+          <div class="wrap-column">
+            <div class="wrap-row">
+              <button
+                class="button-text dark"
+                onclick="location.href = './pages/product3.html'"
+              >
+                learn more
+              </button>
+              <button
+                class="button-secondary button-text light"
+                onclick="location.href = './pages/product3.html#techs-land'"
+              >
+                tech specifics
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      ============================================
+      -->
+      <section class="section-definied product-presentation dark-bg">
+        <div class="wrap-row">
+          <div class="wrap-column">
+            <div class="synchro-type">Synch-id</div>
+            <div class="subtitle">Tag di prodotto</div>
+          </div>
+          <div class="wrap-column">
+            <div class="wrap-row">
+              <button
+                class="button-text dark"
+                onclick="location.href = './pages/product4.html'"
+              >
+                learn more
+              </button>
+              <button
+                class="button-secondary button-text light"
+                onclick="location.href = './pages/product4.html#techs-land'"
+              >
+                tech specifics
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      ============================================
+      -->
+
+      <div class="section-empty"></div>
+      <section class="section-definied" id="zero-hour-section" style="border-top: var(--border);">
+        <div class="wrap-row">
+          <div class="img-wrap">
+            <img src="./public/recurrent/logo-zhd-white.svg" alt="" />
+          </div>
+          <div class="wrap-column" style="width: fit-content; gap: 1rem">
+            <div class="subtitle">February 3rd, 2026</div>
+            <div class="body-text">
+              We're proud partners of United Nations in the effort to better the
+              way we use time across the globe.
+            </div>
+
+            <div class="wrap-row-end">
+              <button
+                class="button-text dark"
+                onclick="location.href = './pages/zero-hour-day.html'"
+              >
+                learn more
+              </button>
+              <button
+                class="button-secondary button-text light"
+                onclick="location.href = './pages/location.html'"
+              >
+                polls near you
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--
+      ============================================
+      -->
+      <section class="section-empty"></section>
+    </main>
+    <!--
+    FOOTER
+    -->
+    <footer>
+      <div class="wrap">
+        <div class="left">
+          copyright © 2026 SYNCHRO
+          <div style="font-size: 0.8rem; font-weight: 100">
+            All rights reserved
+          </div>
+          <div style="font-size: 0.8rem; font-weight: 100">
+            <span class="footer-link"><a href="./pages/privacy.html">Data Privacy</a></span
+            ><span>&ensp;|&ensp;</span
+            ><span class="footer-link"
+              ><a href="#">Terms and Conditions</a></span
+            >
+            <span>&ensp;|&ensp;</span
+            ><span class="footer-link"><a href="./pages/form.html">Techincal Support</a></span>
+          </div>
+        </div>
+        <div class="right">
+          GENEVA, CH <br />
+          info@synchro.com <br />
+          @zerohourday
+        </div>
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+  </body>
+</html>

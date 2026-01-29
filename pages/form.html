@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--metadati-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--generali-->
+    <title>about SYNCHRO©</title>
+
+    <!--fogli di stile-->
+
+    <link rel="stylesheet" href="../style/variables.css" />
+    <link rel="stylesheet" href="../style/form.css" />
+
+    <!--tipografia-->
+    <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
+  </head>
+  <body>
+    <!--
+    HEADER
+    -->
+      <header>
+        <div class="header-wrap">
+          <div class="link-header">
+            <button id="logo" class="button-text" onclick="location.href='../index.html'">
+              <img src="../public/recurrent/logo.svg" alt="logo" />
+            </button>
+          </div>
+
+          <div class="link-header title-card">
+            <button class="button-text light" onclick="location.href='../pages/about.html'">about</button>
+
+            <button class="button-text light" onclick="location.href='../pages/form.html'">contact us</button>
+          </div>
+        </div>
+      </header>
+    <!--
+    MAIN
+    -->
+    <main>
+      <section class="section-flex">
+        <div class="wrap-row-space" style="width: 100%">
+          <div class="wrap-col-start">
+            <div class="wrap-row-start" style="width: fit-content">
+              <div class="synchro-type" style="width: fit-content">
+                Request form
+              </div>
+              <div class="selector">
+                <div class="body-text" style="width: fit-content">
+                  Select service
+                </div>
+                <select
+                  name="product-select"
+                  id="product-select"
+                  class="body-text selection-box"
+                >
+                  <optgroup label="Request Product">
+                    <option value="chronodex" selected>Chronodex</option>
+                    <option value="product2">Workflow</option>
+                    <option value="product3">Deskflow</option>
+                    <option value="product4">Synch-ID</option>
+                  </optgroup>
+                  <option disabled style="letter-spacing: -2%">
+                    –––––––––––––––––––––––––
+                  </option>
+                  <optgroup label="SYNCHRO services">
+                    <option value="product4">New SYNCHRO poll</option>
+                    <option value="product4">Assistance</option>
+                    <option value="product4">Informations</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="body-text more-about">
+                <p>
+                  Your request will be handled be the specific SYNCHRO
+                  department. We will contact you as soon as possibile to have a
+                  comprehnsive interview in order to give you the best service
+                  possibile.
+                </p>
+              </div>
+              <!--
+              <button class="button-text button-active">product</button>
+              <button class="button-text button-inactive">synchro partner</button>
+              <button class="button-text button-inactive">contact us</button>-->
+            </div>
+            <!---->
+          </div>
+          <div class="wrap-col-start" id="product-request">
+            <!---->
+            <div class="form-fill">
+              <div class="block">
+                <!---->
+                <select
+                  name="entity-select"
+                  class="body-text input-box"
+                  style="font-size: 0.9rem; width: 32vw; opacity: 1"
+                >
+                  <option
+                    value=""
+                    selected
+                    disabled
+                    class="select-field"
+                    style="font-size: 0.8rem"
+                  >
+                    Select Applicant type…
+                  </option>
+                  <option value="chronodex">Private Business</option>
+                  <option value="product2">Public Workplace</option>
+                  <option value="product3">Public Entity</option>
+                </select>
+                <div class="section-empty"></div>
+                <input type="text" placeholder="Country" />
+                <input type="text" placeholder="City or ZIP-code" />
+
+                <input
+                  type="text"
+                  placeholder="Public Entity or Name of Business "
+                />
+
+                <input
+                  type="password"
+                  placeholder="Business ID-Number"
+                  id="identification"
+                />
+                <input type="email" placeholder="Email" />
+                <input type="tel" placeholder="Phone" />
+                <label class="checkbox">
+                  <input type="checkbox" id="terms" />
+                  <span class="checkmark"></span>
+                  <a
+                    href="#"
+                    style="
+                      color: var(--secondary-color);
+                      text-decoration: underline;
+                    "
+                    >I accept terms and conditions</a
+                  >
+                </label>
+                <div class="section-empty"></div>
+
+                <div class="form-btn">
+                  <button class="button-text dark" id="submit-btn">
+                    submit
+                  </button>
+                  <button
+                    class="button-secondary button-text light"
+                    id="reset-btn"
+                  >
+                    reset form
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TERMS -->
+          </div>
+        </div>
+
+        <div class="section-empty"></div>
+        <div class="section-empty"></div>
+      </section>
+    </main>
+    <!--
+    FOOTER
+    -->
+    <footer>
+      <div class="wrap">
+        <div class="left">
+          copyright © 2026 SYNCHRO
+          <div style="font-size: 0.8rem; font-weight: 100">
+            All rights reserved
+          </div>
+          <div style="font-size: 0.8rem; font-weight: 100">
+            <span class="footer-link"><a href="../pages/privacy.html">Data Privacy</a></span
+            ><span>&ensp;|&ensp;</span
+            ><span class="footer-link"
+              ><a href="../pages/terms.html">Terms and Conditions</a></span
+            >
+            <span>&ensp;|&ensp;</span
+            ><span class="footer-link"><a href="../pages/form.html">Techincal Support</a></span>
+          </div>
+        </div>
+        <div class="right">
+          GENEVA, CH <br />
+          info@synchro.com <br />
+          @zerohourday
+        </div>
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+<script>
+  (() => {
+    // =========================
+    // Helpers
+    // =========================
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+    const root = $("#product-request");
+    if (!root) return;
+
+    const entitySelect = $('select[name="entity-select"]', root); // gate select
+    const serviceSelect = $("#product-select"); // service label in success message
+    const submitBtn = $("#submit-btn");
+    const resetBtn = $("#reset-btn");
+
+    const textInputs = $$("input", root).filter((i) => i.type !== "checkbox");
+    const checkboxes = $$('input[type="checkbox"]', root);
+
+    // =========================
+    // Messages (ENGLISH ONLY)
+    // =========================
+    const MSG = {
+      selectFirst: "Please select an applicant type before filling in the form.",
+      required: "This field is required.",
+      invalidEmail: "Please enter a valid email address.",
+      invalidTel: "Please enter a valid phone number.",
+      invalidPassword: "Business ID-Number must be exactly 10 characters.",
+      checkboxAll: "Please accept all required checkboxes.",
+      success: (serviceLabel) =>
+        `Your request "${serviceLabel}" has been received. We will contact you as soon as possible.`,
+    };
+
+    // timing
+    const ERROR_TTL = 2000; // 2s (requested)
+    const FADE_MS = 250;    // fade duration (CSS + JS coordination)
+
+    // =========================
+    // UI: message areas
+    // =========================
+    const escapeHtml = (str) =>
+      String(str).replace(/[&<>"']/g, (m) => {
+        const map = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" };
+        return map[m];
+      });
+
+    // Top message (generic errors)
+    const topMsg = document.createElement("div");
+    topMsg.id = "form-messages";
+    topMsg.setAttribute("aria-live", "polite");
+    topMsg.style.marginTop = "12px";
+    root.prepend(topMsg);
+
+    // Checkbox message (UNDER checkbox area)
+    const checkboxMsg = document.createElement("div");
+    checkboxMsg.id = "checkbox-messages";
+    checkboxMsg.setAttribute("aria-live", "polite");
+    checkboxMsg.style.marginTop = "10px";
+
+    const lastCheckboxLabel = checkboxes.length
+      ? checkboxes[checkboxes.length - 1].closest("label.checkbox")
+      : null;
+
+    if (lastCheckboxLabel) {
+      lastCheckboxLabel.insertAdjacentElement("afterend", checkboxMsg);
+    } else {
+      root.appendChild(checkboxMsg);
+    }
+
+    // =========================
+    // Auto-hide with fade helpers
+    // =========================
+    let topMsgTimer = null;
+    let checkboxMsgTimer = null;
+
+    const clearTimers = () => {
+      if (topMsgTimer) clearTimeout(topMsgTimer);
+      if (checkboxMsgTimer) clearTimeout(checkboxMsgTimer);
+      topMsgTimer = null;
+      checkboxMsgTimer = null;
+    };
+
+    const clearFieldErrors = () => {
+      $$("[data-error-for]", root).forEach((el) => el.remove());
+      $$("[aria-invalid='true']", root).forEach((el) => el.removeAttribute("aria-invalid"));
+    };
+
+    const clearAllErrors = () => {
+      clearTimers();
+      topMsg.innerHTML = "";
+      checkboxMsg.innerHTML = "";
+      clearFieldErrors();
+    };
+
+    // Fade-in immediately, then fade-out at TTL, then remove
+    const setFadingMessage = (container, html, timerRefSetter) => {
+      container.innerHTML = html;
+
+      const msgEl = container.firstElementChild;
+      if (!msgEl) return;
+
+      // start hidden
+      msgEl.classList.add("fade-msg", "is-hidden");
+
+      // next frame -> visible (fade in)
+      requestAnimationFrame(() => {
+        msgEl.classList.remove("is-hidden");
+      });
+
+      // schedule fade out + clear
+      const t = setTimeout(() => {
+        msgEl.classList.add("is-hidden"); // fade out
+        setTimeout(() => {
+          container.innerHTML = "";
+        }, FADE_MS);
+      }, ERROR_TTL);
+
+      timerRefSetter(t);
+    };
+
+    const showTopError = (text) => {
+      if (topMsgTimer) clearTimeout(topMsgTimer);
+      setFadingMessage(
+        topMsg,
+        `<div class="form-top-error">${escapeHtml(text)}</div>`,
+        (t) => (topMsgTimer = t)
+      );
+    };
+
+    const showCheckboxError = (text) => {
+      if (checkboxMsgTimer) clearTimeout(checkboxMsgTimer);
+      setFadingMessage(
+        checkboxMsg,
+        `<div class="form-top-error">${escapeHtml(text)}</div>`,
+        (t) => (checkboxMsgTimer = t)
+      );
+    };
+
+    const addFieldError = (field, text) => {
+      field.setAttribute("aria-invalid", "true");
+
+      const err = document.createElement("div");
+      err.className = "field-error fade-msg is-hidden";
+      err.dataset.errorFor = field.id || field.name || field.type || "field";
+      err.textContent = text;
+
+      field.insertAdjacentElement("afterend", err);
+
+      // fade in
+      requestAnimationFrame(() => err.classList.remove("is-hidden"));
+
+      // fade out after TTL then remove
+      setTimeout(() => {
+        err.classList.add("is-hidden");
+        setTimeout(() => {
+          if (err.parentNode) err.remove();
+          // remove aria-invalid if no more error elements exist next to it
+          const stillHasErr = field.nextElementSibling && field.nextElementSibling.classList.contains("field-error");
+          if (!stillHasErr) field.removeAttribute("aria-invalid");
+        }, FADE_MS);
+      }, ERROR_TTL);
+    };
+
+    // =========================
+    // Visual effects
+    // =========================
+    const flashEntitySelect = () => {
+      if (!entitySelect) return;
+      entitySelect.classList.add("select-warning");
+      setTimeout(() => entitySelect.classList.remove("select-warning"), ERROR_TTL);
+    };
+
+    const flashUncheckedCheckboxes = (unchecked) => {
+      unchecked.forEach((c) => {
+        const label = c.closest("label.checkbox");
+        const mark = label ? $(".checkmark", label) : null;
+        if (!mark) return;
+        mark.classList.add("checkbox-error");
+        setTimeout(() => mark.classList.remove("checkbox-error"), ERROR_TTL);
+      });
+    };
+
+    // =========================
+    // Lock/unlock (submit stays clickable)
+    // =========================
+    const isEntitySelected = () => !!(entitySelect && entitySelect.value);
+
+    const setLocked = (locked) => {
+      textInputs.forEach((i) => (i.disabled = locked));
+      checkboxes.forEach((c) => (c.disabled = locked));
+
+      // Optional visual cue
+      const opacity = locked ? "0.4" : "1";
+      textInputs.forEach((i) => (i.style.opacity = opacity));
+      checkboxes.forEach((c) => {
+        const label = c.closest("label.checkbox");
+        if (label) label.style.opacity = opacity;
+      });
+    };
+
+    // Initial lock
+    setLocked(true);
+
+    if (entitySelect) {
+      entitySelect.addEventListener("change", () => {
+        clearAllErrors();
+        setLocked(!isEntitySelected());
+      });
+    }
+
+    // Catch interactions with disabled elements (mobile-friendly)
+    root.addEventListener(
+      "pointerdown",
+      (e) => {
+        if (isEntitySelected()) return;
+
+        const triesInput = e.target.closest("input");
+        const triesCheckboxLabel = e.target.closest("label.checkbox");
+        if (triesInput || triesCheckboxLabel) {
+          e.preventDefault();
+          clearAllErrors();
+          showTopError(MSG.selectFirst);
+          flashEntitySelect();
+        }
+      },
+      true
+    );
+
+    // =========================
+    // Password show/hide (hold to reveal)
+    // =========================
+    const initPasswordToggles = () => {
+      textInputs
+        .filter((i) => i.type === "password")
+        .forEach((pwd) => {
+          // wrap
+          const wrapper = document.createElement("div");
+          wrapper.className = "password-wrapper";
+          pwd.parentNode.insertBefore(wrapper, pwd);
+          wrapper.appendChild(pwd);
+
+          // button
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "password-toggle";
+          btn.innerHTML = "show";
+          btn.setAttribute("aria-label", "Show password");
+          btn.style.height = "16px";
+          btn.style.display = "flex";
+          btn.style.justifyContent = "center";
+          btn.style.alignItems = "center";
+          btn.style.border = "var(--border)";
+          btn.style.fontSize = "0.4rem";
+          btn.style.opacity = ".6";
+          wrapper.appendChild(btn);
+
+          const show = () => (pwd.type = "text");
+          const hide = () => (pwd.type = "password");
+
+          // desktop
+          btn.addEventListener("mousedown", show);
+          btn.addEventListener("mouseup", hide);
+          btn.addEventListener("mouseleave", hide);
+
+          // mobile
+          btn.addEventListener("touchstart", show, { passive: true });
+          btn.addEventListener("touchend", hide);
+          btn.addEventListener("touchcancel", hide);
+        });
+    };
+    initPasswordToggles();
+
+    // =========================
+    // Validation
+    // =========================
+    const validateInput = (el) => {
+      const type = el.type || "text";
+      const v = el.value.trim();
+
+      if (!v) return { ok: false, msg: MSG.required };
+      if (type === "email" && !el.checkValidity()) return { ok: false, msg: MSG.invalidEmail };
+      if (type === "tel" && !el.checkValidity()) return { ok: false, msg: MSG.invalidTel };
+      if (type === "password" && el.value.length !== 10) return { ok: false, msg: MSG.invalidPassword };
+
+      return { ok: true };
+    };
+
+    const validateAll = () => {
+      clearAllErrors();
+      let ok = true;
+
+      // Step 1: select first
+      if (!isEntitySelected()) {
+        ok = false;
+        showTopError(MSG.selectFirst);
+        if (entitySelect) addFieldError(entitySelect, MSG.selectFirst);
+        flashEntitySelect();
+        return { ok: false };
+      }
+
+      // Step 2: inputs
+      textInputs.forEach((el) => {
+        const res = validateInput(el);
+        if (!res.ok) {
+          ok = false;
+          addFieldError(el, res.msg);
+        }
+      });
+
+      // Step 3: checkboxes
+      const unchecked = checkboxes.filter((c) => !c.checked);
+      if (unchecked.length) {
+        ok = false;
+        showCheckboxError(MSG.checkboxAll); // under checkboxes
+        flashUncheckedCheckboxes(unchecked);
+      }
+
+      return { ok };
+    };
+
+    // =========================
+    // Success + redirect
+    // =========================
+    const showSuccessAndRedirect = () => {
+      const serviceLabel =
+        serviceSelect?.selectedOptions?.[0]?.textContent?.trim() || "service";
+
+      const overlay = document.createElement("div");
+      overlay.className = "form-success-overlay";
+      overlay.innerHTML = `
+        <div class="form-success-card" role="dialog" aria-modal="true">
+          <div class="form-success-text">${escapeHtml(MSG.success(serviceLabel))}</div>
+        </div>
+      `;
+      document.body.appendChild(overlay);
+
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 1800);
+    };
+
+    // =========================
+    // Events
+    // =========================
+    if (submitBtn) {
+      submitBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const { ok } = validateAll();
+        if (!ok) return;
+        showSuccessAndRedirect();
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        clearAllErrors();
+
+        if (entitySelect) entitySelect.selectedIndex = 0;
+        textInputs.forEach((i) => (i.value = ""));
+        checkboxes.forEach((c) => (c.checked = false));
+
+        setLocked(true);
+      });
+    }
+  })();
+</script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.product-presentation {
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+.img-wrap{
+    height: 16rem;
+    width: 16rem;
+}
+
+#zero-hour-section {
+    background: none;
+}

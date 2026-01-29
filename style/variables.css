@@ -1,0 +1,537 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: rgb(240, 240, 240);
+  --secondary-color-opacity: #f0f0f02e;
+  --placeholder: rgba(240, 240, 240, 0.4);
+  --section-bg: #0e0e0e;
+  --accent-color: #867db0;
+  --bg-dark-opacity: rgba(0, 0, 0, 0.1);
+
+  --animation: 0.4s ease-out;
+
+  --border: 1px solid var(--secondary-color);
+  --border-hover: 1.5px solid var(--accent-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  background: var(--primary-color);
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+}
+
+/*=====================================*/
+/*============== HEADER ===============*/
+/*=====================================*/
+
+header {
+  height: 8vh;
+  width: calc(100% - 40px);
+  padding: 0px 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: row;
+
+  border-bottom: var(--border);
+  background: var(--primary-color);
+}
+
+.header-wrap {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-header {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+#logo img {
+  height: 1.2rem;
+}
+
+/*=====================================*/
+/*========== BOTTONI HEADER ===========*/
+/*=====================================*/
+
+header button {
+  height: 40px;
+  padding: 12px 20px;
+
+  background: none;
+  border: none;
+  opacity: 0.6;
+
+  text-transform: uppercase;
+
+  transition: var(--animation);
+}
+
+.link-header button a {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.link-header button:hover {
+  background: var(--secondary-color);
+  cursor: pointer;
+}
+
+.link-header button img {
+  height: 80%;
+}
+
+#logo {
+  padding: 4px;
+  background: none;
+  opacity: 1;
+}
+
+#logo:hover {
+  padding: 4px;
+  background: none;
+  cursor: pointer;
+}
+
+#logo:hover img {
+  cursor: pointer;
+}
+
+/*=====================================*/
+/*=============== MAIN ================*/
+/*=====================================*/
+
+main {
+  width: calc(100% - 40px);
+  height: fit-content;
+  flex: 1;
+  margin-bottom: 20px;
+  margin-top: calc(64px + 1rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  gap: 20px;
+}
+
+/*=====================================*/
+/*========= SECTION | GENERAL =========*/
+/*=====================================*/
+
+section {
+  padding: 40px;
+  width: calc(100% - 80px);
+
+  background-size: cover;
+
+  display: flex;
+}
+
+.section-definied {
+  height: calc(72vh - 80px);
+}
+.section-flex {
+  height: fit-content;
+}
+
+.section-empty {
+  padding: 0;
+  height: 40px;
+  background: none;
+}
+
+/*–––––––––––––––––––––––––––––––––––––*/
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*=====================================*/
+/*=========== main BUTTONS ============*/
+/*=====================================*/
+
+main button {
+  height: 40px;
+  width: fit-content;
+  padding: 12px 20px;
+
+  background: var(--secondary-color);
+  border: none;
+  opacity: 0.6;
+
+  border: var(--border);
+
+  text-transform: uppercase;
+  color: var(--primary-color);
+
+  transition: var(--animation);
+}
+
+main .button-secondary {
+  height: 40px;
+  width: fit-content;
+  padding: 12px 20px;
+
+  background: none;
+  border: none;
+  opacity: 0.6;
+
+  border: var(--border);
+
+  text-transform: uppercase;
+
+  transition: var(--animation);
+}
+
+.button-text {
+  font-size: 0.75rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 500;
+}
+
+main button:hover {
+  opacity: 1;
+  background: var(--accent-color);
+  border: var(--border-hover);
+  cursor: pointer;
+}
+
+.light {
+  color: var(--secondary-color);
+}
+.light:hover {
+  color: var(--primary-color);
+}
+
+.dark {
+  color: var(--primary-color);
+}
+
+
+
+/*=====================================*/
+/*============ nav BUTTONS ============*/
+/*=====================================*/
+
+nav button {
+  height: 40px;
+  width: fit-content;
+  padding: 12px 20px;
+
+  background: var(--accent-color);
+  border: none;
+  opacity: 1;
+
+  border: var(--border-hover);
+
+  text-transform: uppercase;
+  color: var(--primary-color);
+
+  transition: var(--animation);
+}
+
+nav .button-secondary {
+  height: 40px;
+  width: fit-content;
+  padding: 12px 20px;
+
+  background: none;
+  border: none;
+  opacity: 1;
+
+  border: var(--border-hover);
+
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  transition: var(--animation);
+}
+
+nav .button-text {
+  font-size: 0.8rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+main button:hover {
+  opacity: 1;
+  background: var(--accent-color);
+  border: var(--border-hover);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+nav button:hover {
+  opacity: 1;
+  background: var(--accent-color);
+  border: var(--border-hover);
+  color: var(--primary-color);
+}
+
+.button-secondary .button-text {
+  color: var(--secondary-color);
+}
+
+
+.button-active {
+    background: var(--accent-color);
+    border: var(--border-hover);
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.button-inactive {
+    background: none;
+    border: var(--border);
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+/*=====================================*/
+/*=============== TYPE ================*/
+/*=====================================*/
+
+.synchro-type {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+}
+
+.title {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+}
+
+.title-caps {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.subtitle-caps {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.body-text {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 200;
+  width: 40ch;
+  letter-spacing: 3%;
+}
+
+.body-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.body-text p::first-letter {
+  text-transform: uppercase;
+}
+
+/*=====================================*/
+/*============== FOOTER ===============*/
+/*=====================================*/
+
+footer {
+  width: calc(100%);
+  height: calc(8vh - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+
+  border-top: var(--border);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  text-transform: uppercase;
+}
+
+footer .wrap {
+  width: calc(100%);
+  height: 8vh;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  color: var(--secondary-color);
+}
+
+footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+footer .right {
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+/*=====================================*/
+/*============== WRAPS ================*/
+/*=====================================*/
+
+.wrap-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wrap-row-end {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.wrap-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: fit-content;
+}
+
+.wrap-col-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.wrap-col-end {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.wrap-col-space {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wrap-row-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wrap-grid {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+}
+
+/*=====================================*/
+/*=============== IMG =================*/
+/*=====================================*/
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card img {
+  height: 50%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*=====================================*/
+/*=============== TEST ================*/
+/*=====================================*/
+
+.check {
+  border: var(--border-hover);
+}
+
+.dark-bg {
+  background: var(--section-bg);
+}
+
+
+
+
+
+
+
+
+button {
+  cursor: pointer;
+}
