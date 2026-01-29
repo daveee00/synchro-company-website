@@ -1,7 +1,22 @@
-/*.hero {
+.hero {
   background: url(../public/chronodex-page//brochure2.png);
 }
-*/
+
+#hero-sec {
+  height: 76vh;
+}
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#main-info .wrap-col-start {
+  width: 100%;
+}
+
+#main-info .wrap-col-start .wrap-row .wrap-col-start .body-text {
+  width: 50ch;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
 .grid-3 {
   margin-top: 4rem;
   grid-template-columns: repeat(3, 1fr);
@@ -35,6 +50,8 @@
   margin-top: 1rem;
 }
 
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
 #design-choice {
   background: url(../public/chronodex-page/design.png);
   background-size: cover;
@@ -42,6 +59,14 @@
   background-position: center;
 }
 
+#design-choice .full-width {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*section CAROSELLO COMPONENTI*/
+
+/*
 #carousel {
   overflow: hidden;
 }
@@ -67,7 +92,7 @@
 
   padding: 10px 0;
 
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .wrap-carousel::-webkit-scrollbar {
@@ -76,8 +101,12 @@
 
 .wrap-carousel .card {
   background: var(--section-bg);
-  min-width: 32rem; /* meglio di width */
+  min-width: 32rem; 
+  height: 18rem;
   flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card .wrap {
@@ -92,7 +121,7 @@
 }
 
 .card .appear {
-  display: none;
+  display: block;
 }
 
 .card:hover .appear {
@@ -107,8 +136,50 @@
 #carosuel .card:hover {
   opacity: 1;
 }
+*/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-/********************************/
+#carosuel .full-width {
+  width: 100%;
+}
+
+#carosuel .wrap-carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+#carosuel .wrap-carousel .card {
+  flex: 1;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0;
+}
+
+#carosuel .wrap-carousel .card .wrap {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#carosuel .wrap-carousel .card .wrap .body-text {
+  width: 50ch;
+  text-align: left;
+}
+#carosuel .wrap-carousel .card .wrap p {
+  width: 100%;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+#video-section {
+  height: 76vh;
+  margin-top: 4rem;
+}
+
 .video .bg-video {
   inset: 0;
   width: 100%;
@@ -120,7 +191,7 @@
   cursor: pointer;
 }
 
-/********************************/
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 #techs .wrap-column {
   width: 100%;
@@ -128,12 +199,17 @@
 }
 
 #techs .synchro-type {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
+}
+
+#techs .first-spec {
+  border-top: var(--border);
 }
 
 #techs .specific {
   width: 100%;
-  height: 4rem;
+  height: fit-content;
+  padding: 1.2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -144,31 +220,24 @@
 }
 
 #techs .specific .subtitle {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+#techs .specific .body-text {
+  font-size: 1rem;
 }
 
 #techs .specific .box-left {
-    width: 40ch;
+  width: 40ch;
 }
 
 #techs .specific .box-right {
-    flex: 1;
+  flex: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#techs .specific .box-right p {
+  width: 80%;
+}
 
 /*==============================*/
 
@@ -194,6 +263,8 @@ nav {
   opacity: 0;
   pointer-events: none;
   transform: translateX(-50%) translateY(12px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
   will-change: opacity, transform;
 }
