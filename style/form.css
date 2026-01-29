@@ -1,8 +1,18 @@
+#first-section .wrap-row-space {
+  width: 100%;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
 .form-fill {
   height: calc(84vh - 80px - 8vh);
   background-size: cover;
-  padding: 40px;
-  width: calc(100% - 80px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +33,16 @@
   justify-content: start;
 }
 
+.block select {
+  font-size: 0.9rem;
+  width: 32vw;
+  opacity: 1;
+}
+
+.block select option {
+  font-size: 0.8rem;
+}
+
 .block input {
   width: 32vw;
   height: 2rem;
@@ -34,12 +54,6 @@
   font-weight: 100;
   border-bottom: 1px solid var(--secondary-color);
   font-size: 0.9rem;
-}
-
-.form-fill {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .summary {
@@ -59,6 +73,11 @@
 
 .checkbox input {
   display: none;
+}
+
+.checkbox a {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 .checkmark {
@@ -118,49 +137,43 @@
 }
 
 .block .body-text {
-    width: 32vw;
-    font-size: 0.8rem;
-    opacity: 0.6;
+  width: 32vw;
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 .block .body-text p {
-    width: 80%;
+  width: 80%;
 }
 
 .form-btn {
-    width: 32vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 1rem;
-    margin-top: 2rem;
+  width: 32vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .form-btn input {
-    border: var(--border);
-    background: none;
-    width: fit-content;
-    padding: 0 20px;
-    display: flex;
+  border: var(--border);
+  background: none;
+  width: fit-content;
+  padding: 0 20px;
+  display: flex;
 }
 
 .form-btn input:hover {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    cursor: pointer;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 .more-about {
-    font-size: 0.8rem;
-    width: 50ch;
-    margin-top: 1.8rem;
+  font-size: 0.8rem;
+  width: 50ch;
+  margin-top: 1.8rem;
 }
-
-
-
-
-
-
 
 /* Inline field error */
 .field-error {
@@ -220,7 +233,6 @@
   transition: all 0.2s ease;
 }
 
-
 /* Password toggle wrapper */
 .password-wrapper {
   position: relative;
@@ -249,7 +261,9 @@
 .fade-msg {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 250ms ease, transform 250ms ease;
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
 }
 .fade-msg.is-hidden {
   opacity: 0;
