@@ -11,10 +11,21 @@
 .img-wrap {
   height: 16rem;
   width: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-wrap img {
+  height: 100%;
+  object-fit: contain;
 }
 
 #zero-hour-section {
   background: none;
+  padding: 1rem 0;
 }
 
 /* ===========================

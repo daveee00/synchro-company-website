@@ -1,5 +1,6 @@
 #bg-raggiera {
   background: url(../public/SVG/raggiera-gradient.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 0;
 }
@@ -11,11 +12,6 @@
 #bg-raggiera .wrap-row-end .wrap-column {
   width: 80ch;
   gap: 2rem;
-}
-
-#bg-raggiera .img-wrap {
-  width: 100%;
-  height: 1.4rem;
 }
 
 /*–––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -85,6 +81,10 @@
 
 #values .card .body-text {
   width: 100%;
+}
+
+.lastone {
+  display: none;
 }
 
 

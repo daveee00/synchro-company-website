@@ -1,3 +1,13 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 :root {
   --primary-color: #1a1a1a;
   --secondary-color: rgb(240, 240, 240);
@@ -19,6 +29,7 @@ a {
 
 body {
   min-height: 100vh;
+
   overflow-x: hidden;
 
   display: flex;
@@ -38,7 +49,7 @@ body {
 /*=====================================*/
 
 header {
-  height: 8vh;
+  height: 72px;
   width: calc(100% - 40px);
   padding: 0px 20px;
 
@@ -49,6 +60,7 @@ header {
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   border-bottom: var(--border);
   background: var(--primary-color);
@@ -66,10 +78,15 @@ header {
   display: flex;
   flex-direction: row;
   gap: 12px;
+  width: fit-content;
 }
 
 #logo img {
-  height: 1.2rem;
+  height: 19px;
+}
+
+#zhd-btn {
+  display: none;
 }
 
 /*=====================================*/
@@ -87,11 +104,6 @@ header button {
   text-transform: uppercase;
 
   transition: var(--animation);
-}
-
-.link-header button a {
-  font-size: 0.8rem;
-  color: var(--secondary-color);
 }
 
 .link-header button:hover {
@@ -164,12 +176,13 @@ section {
   background: none;
 }
 
-/*–––––––––––––––––––––––––––––––––––––*/
 .hero {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
 
 /*=====================================*/
 /*=========== main BUTTONS ============*/
@@ -209,7 +222,7 @@ main .button-secondary {
 }
 
 .button-text {
-  font-size: 0.75rem;
+  font-size: 12px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 500;
 }
@@ -231,8 +244,6 @@ main button:hover {
 .dark {
   color: var(--primary-color);
 }
-
-
 
 /*=====================================*/
 /*============ nav BUTTONS ============*/
@@ -298,19 +309,18 @@ nav button:hover {
   color: var(--secondary-color);
 }
 
-
 .button-active {
-    background: var(--accent-color);
-    border: var(--border-hover);
-    color: var(--primary-color);
-    opacity: 1;
+  background: var(--accent-color);
+  border: var(--border-hover);
+  color: var(--primary-color);
+  opacity: 1;
 }
 
 .button-inactive {
-    background: none;
-    border: var(--border);
-    color: var(--secondary-color);
-    opacity: 0.5;
+  background: none;
+  border: var(--border);
+  color: var(--secondary-color);
+  opacity: 0.5;
 }
 
 /*=====================================*/
@@ -380,6 +390,7 @@ nav button:hover {
   text-transform: uppercase;
 }
 
+
 /*=====================================*/
 /*============== FOOTER ===============*/
 /*=====================================*/
@@ -402,7 +413,7 @@ footer {
 }
 
 footer .wrap {
-  width: calc(100%);
+  width: calc(100% - 40px);
   height: 8vh;
   padding: 20px;
 
@@ -423,6 +434,7 @@ footer .right {
   font-size: 0.8rem;
   font-weight: 100;
   text-align: right;
+  width: fit-content;
 }
 
 footer .footer-link:hover {
@@ -438,6 +450,14 @@ footer a {
 /*=====================================*/
 
 .wrap-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wrap-button {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -525,13 +545,35 @@ img {
   background: var(--section-bg);
 }
 
-
-
-
-
-
-
-
 button {
   cursor: pointer;
+}
+
+/* =========================
+   HEADER FIX (iPad stable)
+   ========================= */
+
+header button {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--secondary-color); /* default visibile su bg scuro */
+  opacity: 0.9; /* evita “sparizioni” per autoscale/opacity */
+  line-height: 1;
+}
+
+/* se vuoi mantenere la logica delle classi */
+header button.light {
+  color: var(--secondary-color);
+}
+header button.dark {
+  color: var(--primary-color);
+}
+
+/* testo bottoni header sempre leggibile */
+header .button-text {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }

@@ -1,0 +1,34 @@
+/*–––––––––––––––––––––––––––––––––––––
+RESPONSIVE
+–––––––––––––––––––––––––––––––––––––*/
+
+/* smartphone */
+@media screen and (max-width: 768px) {
+  .product-presentation .wrap-row {
+    flex-direction: column;
+  }
+
+  .img-wrap {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .img-wrap img {
+    height: 70%;
+    object-fit: contain;
+  }
+  #zero-hour-section .wrap-row {
+    flex-direction: column;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .product-presentation .wrap-row {
+    flex-direction: column;
+  }
+}
