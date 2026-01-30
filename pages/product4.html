@@ -454,5 +454,21 @@
     </script>
 
     <script src="../scripts/nav-visibility-complete.js"></script>
+
+        <script>
+  // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
+  (function () {
+    document.addEventListener(
+      "click",
+      function (e) {
+        const btn = e.target.closest("button");
+        if (!btn) return;
+        // lascia finire la navigazione/gesture corrente, poi blur
+        setTimeout(() => btn.blur(), 0);
+      },
+      { passive: true }
+    );
+  })();
+</script>
   </body>
 </html>

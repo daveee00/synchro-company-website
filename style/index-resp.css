@@ -32,3 +32,47 @@ RESPONSIVE
     flex-direction: column;
   }
 }
+
+
+/* =========================================================
+   NO-FLASH ON TAP (mobile/tablet)
+   Da incollare IN FONDO a index-resp.css
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  /* elimina il flash di tap (iOS/Android) */
+  a,
+  button,
+  [role="button"] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none; /* niente menu "copia/incolla" su tap lungo */
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation; /* riduce delay/gesture strane */
+  }
+
+  /* evita repaint/flash su alcuni device quando tocchi */
+  button,
+  .button-text,
+  .button-secondary {
+    -webkit-appearance: none;
+    appearance: none;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  /* rimuove focus "sporco" da tap (ma lasciamo focus-visible per tastiera) */
+  button:focus {
+    outline: none;
+  }
+  button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  /* se qualche regola altrove cambia opacity/background su :active, normalizziamo */
+  button:active,
+  a:active {
+    background-color: transparent;
+  }
+}
