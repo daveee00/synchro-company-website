@@ -304,40 +304,262 @@
     <!--SCRIPTS-->
 
     <!--gestione video-->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const video = document.querySelector("section.video .bg-video");
-        if (!video) return;
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector("section.video .bg-video");
+    if (!video) return;
 
-        // Mostra controlli solo in hover
-        const showControls = () => {
-          if (!video.hasAttribute("controls"))
-            video.setAttribute("controls", "");
-        };
+    // -----------------------------
+    // CSS (iniettato via script)
+    // -----------------------------
+    const style = document.createElement("style");
+    style.textContent = `
+      /* wrapper creato via JS */
+      .video-preview-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
 
-        const hideControls = () => {
-          // Non tocchiamo currentTime: così riprende da dove era rimasto
-          if (video.hasAttribute("controls")) video.removeAttribute("controls");
-        };
+      /* overlay poster + play */
+      .video-preview-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        display: none; /* gestito via JS */
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
 
-        video.addEventListener("mouseenter", showControls);
-        video.addEventListener("mouseleave", hideControls);
+      /* poster come sfondo (sempre visibile quando overlay attivo) */
+      .video-preview-overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateZ(0);
+      }
 
-        // Double click → fullscreen
-        video.addEventListener("dblclick", async (e) => {
-          e.preventDefault();
-          try {
-            if (video.requestFullscreen) await video.requestFullscreen();
-            else if (video.webkitRequestFullscreen)
-              video.webkitRequestFullscreen(); // Safari
-          } catch (err) {
-            console.warn("Fullscreen failed:", err);
-          }
-        });
+      /* leggero velo per leggibilità bottone */
+      .video-preview-overlay::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.18);
+      }
 
-        // Stato iniziale: controlli nascosti
-        hideControls();
-      });
-    </script>
+      /* bottone play minimal */
+      .video-preview-play {
+        position: relative;
+        z-index: 4;
+        width: 72px;
+        height: 72px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,0.65);
+        background: rgba(0,0,0,0.35);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+      }
+
+      .video-preview-overlay:hover .video-preview-play {
+        transform: scale(1.05);
+        background: rgba(0,0,0,0.45);
+        border-color: rgba(255,255,255,0.85);
+      }
+
+      /* triangolo play */
+      .video-preview-play::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 18px solid rgba(255,255,255,0.9);
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        margin-left: 4px;
+      }
+
+      /* per accessibilità: focus visibile */
+      .video-preview-play:focus-visible {
+        outline: 2px solid rgba(255,255,255,0.9);
+        outline-offset: 3px;
+      }
+
+      /* se l'utente preferisce meno animazioni */
+      @media (prefers-reduced-motion: reduce) {
+        .video-preview-play { transition: none; }
+        .video-preview-overlay:hover .video-preview-play { transform: none; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // -----------------------------
+    // DOM: wrapper + overlay
+    // -----------------------------
+    const wrap = document.createElement("div");
+    wrap.className = "video-preview-wrap";
+
+    // Inserisce wrap prima del video e poi sposta video dentro wrap
+    const parent = video.parentElement;
+    parent.insertBefore(wrap, video);
+    wrap.appendChild(video);
+
+    const overlay = document.createElement("div");
+    overlay.className = "video-preview-overlay";
+    overlay.setAttribute("role", "button");
+    overlay.setAttribute("tabindex", "0");
+    overlay.setAttribute("aria-label", "Play video");
+
+    const playBtn = document.createElement("div");
+    playBtn.className = "video-preview-play";
+    playBtn.setAttribute("aria-hidden", "true");
+
+    overlay.appendChild(playBtn);
+    wrap.appendChild(overlay);
+
+    // Imposta il poster sull'overlay (così si vede SEMPRE anche se il video è a metà)
+    const posterUrl = video.getAttribute("poster");
+    if (posterUrl) {
+      overlay.style.setProperty("--poster-url", `url("${posterUrl}")`);
+      // Applichiamo lo sfondo al ::before via style inline (facile e robusto)
+      // Nota: non possiamo settare direttamente ::before, quindi settiamo background sul nodo
+      // e lo usiamo su ::before leggendo computed? più semplice: settiamo background sul nodo e lo copiamo su ::before con CSS? non possibile.
+      // Soluzione pratica: settiamo background sul nodo e lo replichiamo su ::before via CSS usando inherit.
+      // Aggiorniamo CSS per usare inherit:
+      const patch = document.createElement("style");
+      patch.textContent = `
+        .video-preview-overlay { background-image: var(--poster-url); }
+        .video-preview-overlay::before { background-image: inherit; }
+      `;
+      document.head.appendChild(patch);
+    }
+
+    // -----------------------------
+    // Helpers stato
+    // -----------------------------
+    const isFullscreen = () =>
+      document.fullscreenElement === video ||
+      document.fullscreenElement === wrap ||
+      document.fullscreenElement === parent ||
+      document.webkitFullscreenElement === video; // Safari
+
+    const showControls = () => {
+      if (!video.hasAttribute("controls")) video.setAttribute("controls", "");
+    };
+
+    const hideControls = () => {
+      if (video.hasAttribute("controls")) video.removeAttribute("controls");
+    };
+
+    const showOverlay = () => {
+      overlay.style.display = "flex";
+    };
+
+    const hideOverlay = () => {
+      overlay.style.display = "none";
+    };
+
+    const syncUI = () => {
+      const fs = isFullscreen();
+      const pausedOrEnded = video.paused || video.ended;
+
+      // Overlay SOLO quando NON fullscreen e NON in riproduzione
+      if (!fs && pausedOrEnded) showOverlay();
+      else hideOverlay();
+
+      // Controlli:
+      // - In fullscreen: sempre visibili
+      // - Fuori fullscreen: visibili solo in hover quando in riproduzione
+      if (fs) {
+        showControls();
+      } else {
+        if (!pausedOrEnded) {
+          // playing inline: hover-based
+          hideControls();
+        } else {
+          // paused inline: niente controlli, solo overlay
+          hideControls();
+        }
+      }
+    };
+
+    // -----------------------------
+    // Azioni
+    // -----------------------------
+    const tryPlay = async () => {
+      try {
+        await video.play();
+      } catch (err) {
+        // autoplay/gesture restrictions: niente panico, rimane overlay
+        console.warn("Play failed:", err);
+      }
+    };
+
+    const requestFs = async () => {
+      try {
+        if (video.requestFullscreen) await video.requestFullscreen();
+        else if (wrap.requestFullscreen) await wrap.requestFullscreen();
+        else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen(); // Safari
+      } catch (err) {
+        console.warn("Fullscreen failed:", err);
+      }
+    };
+
+    // -----------------------------
+    // Eventi UI
+    // -----------------------------
+    // Hover: controlli solo quando playing e non fullscreen
+    video.addEventListener("mouseenter", () => {
+      if (!isFullscreen() && !video.paused && !video.ended) showControls();
+    });
+    video.addEventListener("mouseleave", () => {
+      if (!isFullscreen() && !video.paused && !video.ended) hideControls();
+    });
+
+    // Click sull'overlay: play
+    overlay.addEventListener("click", (e) => {
+      e.preventDefault();
+      tryPlay();
+    });
+    overlay.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        tryPlay();
+      }
+    });
+
+    // Click sul video quando è fermo: play (comodo su mobile)
+    video.addEventListener("click", () => {
+      if (!isFullscreen() && (video.paused || video.ended)) tryPlay();
+    });
+
+    // Double click → fullscreen (come prima)
+    video.addEventListener("dblclick", async (e) => {
+      e.preventDefault();
+      await requestFs();
+    });
+
+    // Stato video
+    video.addEventListener("play", syncUI);
+    video.addEventListener("pause", syncUI);
+    video.addEventListener("ended", syncUI);
+
+    // Fullscreen changes (standard + Safari)
+    document.addEventListener("fullscreenchange", syncUI);
+    document.addEventListener("webkitfullscreenchange", syncUI);
+
+    // Stato iniziale
+    hideControls();
+    syncUI();
+  });
+</script>
   </body>
 </html>

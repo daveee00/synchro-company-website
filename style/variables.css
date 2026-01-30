@@ -272,6 +272,11 @@ nav button {
   transition: var(--animation);
 }
 
+#prod-sections .subtitle-caps {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
 nav .button-secondary {
   height: 40px;
   width: fit-content;
