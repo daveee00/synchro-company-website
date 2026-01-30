@@ -90,12 +90,21 @@
               />
             </div>
             <div class="body-text wrap-col-end">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              vel urna erat. Curabitur quis accumsan eros, id blandit nisl.
-              Aliquam erat volutpat. Duis eros lacus, malesuada cursus dolor
-              sed, imperdiet cursus lacus. Fusce eu eleifend libero. Donec in
-              mauris sit amet enim posuere vehicula. Maecenas metus turpis,
-              lobortis et cursus.
+              The UN Program for Global Time Coordination has established a day
+              dedicated to collecting and evaluating daily-routine data,
+              ensuring a fair and unified world time. Through this shared
+              effort, every individual contributes to defining a collective
+              temporal balance. Time is no longer inherited from history, but
+              earned and shared by all. Defining a new, unified timezone seeks
+              the measure that proves most effective for everyone, the more a
+              nation aligns, the more it demonstrates that its way of managing
+              the 24 hours is proficient and potentially applicable globally. //
+              CHRONODEX was developed to ensure that these measurements are
+              precise and standardized. A compact device to store information
+              about the everyday routine. Its standardized input method and real
+              time synchronization make data collection fast, consistent, and
+              resistant to local variation, so the comparison between routines
+              across the world can produce trustworthy alignment metrics.
             </div>
           </div>
         </div>
@@ -132,10 +141,15 @@
           <div class="synchro-type">how to use chronodex</div>
           <div class="section-empty"></div>
           <div class="body-text">
-            CHRONODEX makes the voting process extremely intuitive, to avoid
-            waisting time at the polls. the clock-like shape of the machine
-            helps with a better understading of its workings. here we have the
-            instructions on how to use the machine.
+            CHRONODEX makes data deposition fast and intuitive, minimizing time
+            spent at the polls. Its clock like shape guides the user through the
+            interaction. Each booth includes a concise recap explaining how
+            CHRONODEX works, and trained staff are on hand to assist if needed.
+            <p>
+              This combination of intuitive design, visible instructions, and on
+              site support ensures a smooth, efficient, and stress free
+              experience for everyone.
+            </p>
             <p>
               Every voting booth is equiped with a recap of of CHRONODEX works,
               and trained staff will be right there to help you, to ensure a
@@ -151,7 +165,7 @@
                 <div class="body-text">
                   press the chosen activity button, then turn the knob to add as
                   many hours as needed. <br />Repeat the process for all other
-                  activities
+                  activities.
                 </div>
               </div>
             </div>
@@ -178,8 +192,15 @@
               <div class="wrap-text">
                 <div class="subtitle-caps">view data</div>
                 <div class="body-text">
-                  scan te QR code on the machine to view your score.
-                  <br />zerohourday.org
+                  scan te QR code on the machine to view your score on
+                  <a
+                    href="https://zerohourday.org"
+                    style="
+                      text-decoration: underline;
+                      color: var(--secondary-color);
+                    "
+                    >zerohourday.org</a
+                  >
                 </div>
               </div>
             </div>
@@ -207,20 +228,21 @@
           <div class="wrap-col-end">
             <div class="synchro-type">why alignment</div>
             <div class="body-text">
-              With CHRONODEX, everyone measures the way they generally spend
-              their time, how they choose to organize it and integrate it with
-              the rythms of society.
+              High alignment suggests a repeatable, effective approach to
+              dividing the 24 hour cycle. If a country’s collective routine
+              consistently produces better outcomes and its model becomes a
+              candidate for broader adoption. The goal is to surface time
+              management practices that reliably support social and economic
+              activity, then test whether those practices translate well across
+              different cultures and contexts.
               <br />
-              <br />The definition of a new and unified timezone aims to find
-              the measure that proves itself best for everyone. The more a
-              nation is aligned, the more it shows that their way of handling
-              the 24 hours in a day is more proficient, and that their model
-              should be applied globally, to achieve the same results
-              everywhere.
-              <br />
-              <br />We take this measure every year, to better cater to the
-              needs of an ever-chaning society. Even a perfect measure today,
-              might not me adequate tomorrow.
+              <br />Because societies evolve, the measurement must be recurring.
+              Annual assessments capture shifts in behavior driven by
+              technology, policy, or cultural change, ensuring the chosen
+              standard remains relevant. A measure that fits today may be
+              obsolete tomorrow; regular re evaluation keeps the unified
+              timezone adaptive, evidence based, and responsive to the changing
+              needs of people and institutions.
             </div>
           </div>
         </div>
@@ -228,26 +250,24 @@
       <!---->
       <div class="section-empty firstone"></div>
       <!---->
-      <section class="section-flex col-center " id="webapp">
-        <div class="wrap-row-space ">
-          <div class="wrap-col-end ">
-            <div class="synchro-type ">keep track of voting</div>
-            <div class="body-text ">
+      <section class="section-flex col-center" id="webapp">
+        <div class="wrap-row-space">
+          <div class="wrap-col-end">
+            <div class="synchro-type">keep track of voting</div>
+            <div class="body-text">
               <p>
-                On February 3rd, voters of age will be required to go the polls
-                to contibite to the global rank. While waiting and after voting,
-                evceryone will be able to keep track of the results thorugh the
-                ZERO HOUR DAY webapp
+                On February 3, eligible citizens will visit the designated
+                polling stations to contribute to the global ranking. After
+                completing the submission, every person is issued a unique ID
+                that grants access to a dedicated page on the Zero Hour Day web
+                app, where individuals can review their submitted data and track
+                how their contribution affects both national and international
+                standings.
               </p>
               <p>
-                Once you deliver your vote, you'll be assigned a unique ID and
-                you'll be able to acces your personal page, to see how your
-                contribution is impacting the rank.
-              </p>
-              <p>
-                You can access the webapp even if you haven't voted yet: you'll
-                still be able to see the general trend of voting and find
-                polling stations near you.
+                When the day comes to an end, the personal dashboard displays a
+                concise summary of the entry, the new time and the final
+                judgment of how theor contribution has impacted the nation.
               </p>
             </div>
             <div class="section-empty lastone"></div>
@@ -304,16 +324,16 @@
     <!--SCRIPTS-->
 
     <!--gestione video-->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const video = document.querySelector("section.video .bg-video");
-    if (!video) return;
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.querySelector("section.video .bg-video");
+        if (!video) return;
 
-    // -----------------------------
-    // CSS (iniettato via script)
-    // -----------------------------
-    const style = document.createElement("style");
-    style.textContent = `
+        // -----------------------------
+        // CSS (iniettato via script)
+        // -----------------------------
+        const style = document.createElement("style");
+        style.textContent = `
       /* wrapper creato via JS */
       .video-preview-wrap {
         position: relative;
@@ -399,183 +419,185 @@
         .video-preview-overlay:hover .video-preview-play { transform: none; }
       }
     `;
-    document.head.appendChild(style);
+        document.head.appendChild(style);
 
-    // -----------------------------
-    // DOM: wrapper + overlay
-    // -----------------------------
-    const wrap = document.createElement("div");
-    wrap.className = "video-preview-wrap";
+        // -----------------------------
+        // DOM: wrapper + overlay
+        // -----------------------------
+        const wrap = document.createElement("div");
+        wrap.className = "video-preview-wrap";
 
-    // Inserisce wrap prima del video e poi sposta video dentro wrap
-    const parent = video.parentElement;
-    parent.insertBefore(wrap, video);
-    wrap.appendChild(video);
+        // Inserisce wrap prima del video e poi sposta video dentro wrap
+        const parent = video.parentElement;
+        parent.insertBefore(wrap, video);
+        wrap.appendChild(video);
 
-    const overlay = document.createElement("div");
-    overlay.className = "video-preview-overlay";
-    overlay.setAttribute("role", "button");
-    overlay.setAttribute("tabindex", "0");
-    overlay.setAttribute("aria-label", "Play video");
+        const overlay = document.createElement("div");
+        overlay.className = "video-preview-overlay";
+        overlay.setAttribute("role", "button");
+        overlay.setAttribute("tabindex", "0");
+        overlay.setAttribute("aria-label", "Play video");
 
-    const playBtn = document.createElement("div");
-    playBtn.className = "video-preview-play";
-    playBtn.setAttribute("aria-hidden", "true");
+        const playBtn = document.createElement("div");
+        playBtn.className = "video-preview-play";
+        playBtn.setAttribute("aria-hidden", "true");
 
-    overlay.appendChild(playBtn);
-    wrap.appendChild(overlay);
+        overlay.appendChild(playBtn);
+        wrap.appendChild(overlay);
 
-    // Imposta il poster sull'overlay (così si vede SEMPRE anche se il video è a metà)
-    const posterUrl = video.getAttribute("poster");
-    if (posterUrl) {
-      overlay.style.setProperty("--poster-url", `url("${posterUrl}")`);
-      // Applichiamo lo sfondo al ::before via style inline (facile e robusto)
-      // Nota: non possiamo settare direttamente ::before, quindi settiamo background sul nodo
-      // e lo usiamo su ::before leggendo computed? più semplice: settiamo background sul nodo e lo copiamo su ::before con CSS? non possibile.
-      // Soluzione pratica: settiamo background sul nodo e lo replichiamo su ::before via CSS usando inherit.
-      // Aggiorniamo CSS per usare inherit:
-      const patch = document.createElement("style");
-      patch.textContent = `
+        // Imposta il poster sull'overlay (così si vede SEMPRE anche se il video è a metà)
+        const posterUrl = video.getAttribute("poster");
+        if (posterUrl) {
+          overlay.style.setProperty("--poster-url", `url("${posterUrl}")`);
+          // Applichiamo lo sfondo al ::before via style inline (facile e robusto)
+          // Nota: non possiamo settare direttamente ::before, quindi settiamo background sul nodo
+          // e lo usiamo su ::before leggendo computed? più semplice: settiamo background sul nodo e lo copiamo su ::before con CSS? non possibile.
+          // Soluzione pratica: settiamo background sul nodo e lo replichiamo su ::before via CSS usando inherit.
+          // Aggiorniamo CSS per usare inherit:
+          const patch = document.createElement("style");
+          patch.textContent = `
         .video-preview-overlay { background-image: var(--poster-url); }
         .video-preview-overlay::before { background-image: inherit; }
       `;
-      document.head.appendChild(patch);
-    }
-
-    // -----------------------------
-    // Helpers stato
-    // -----------------------------
-    const isFullscreen = () =>
-      document.fullscreenElement === video ||
-      document.fullscreenElement === wrap ||
-      document.fullscreenElement === parent ||
-      document.webkitFullscreenElement === video; // Safari
-
-    const showControls = () => {
-      if (!video.hasAttribute("controls")) video.setAttribute("controls", "");
-    };
-
-    const hideControls = () => {
-      if (video.hasAttribute("controls")) video.removeAttribute("controls");
-    };
-
-    const showOverlay = () => {
-      overlay.style.display = "flex";
-    };
-
-    const hideOverlay = () => {
-      overlay.style.display = "none";
-    };
-
-    const syncUI = () => {
-      const fs = isFullscreen();
-      const pausedOrEnded = video.paused || video.ended;
-
-      // Overlay SOLO quando NON fullscreen e NON in riproduzione
-      if (!fs && pausedOrEnded) showOverlay();
-      else hideOverlay();
-
-      // Controlli:
-      // - In fullscreen: sempre visibili
-      // - Fuori fullscreen: visibili solo in hover quando in riproduzione
-      if (fs) {
-        showControls();
-      } else {
-        if (!pausedOrEnded) {
-          // playing inline: hover-based
-          hideControls();
-        } else {
-          // paused inline: niente controlli, solo overlay
-          hideControls();
+          document.head.appendChild(patch);
         }
-      }
-    };
 
-    // -----------------------------
-    // Azioni
-    // -----------------------------
-    const tryPlay = async () => {
-      try {
-        await video.play();
-      } catch (err) {
-        // autoplay/gesture restrictions: niente panico, rimane overlay
-        console.warn("Play failed:", err);
-      }
-    };
+        // -----------------------------
+        // Helpers stato
+        // -----------------------------
+        const isFullscreen = () =>
+          document.fullscreenElement === video ||
+          document.fullscreenElement === wrap ||
+          document.fullscreenElement === parent ||
+          document.webkitFullscreenElement === video; // Safari
 
-    const requestFs = async () => {
-      try {
-        if (video.requestFullscreen) await video.requestFullscreen();
-        else if (wrap.requestFullscreen) await wrap.requestFullscreen();
-        else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen(); // Safari
-      } catch (err) {
-        console.warn("Fullscreen failed:", err);
-      }
-    };
+        const showControls = () => {
+          if (!video.hasAttribute("controls"))
+            video.setAttribute("controls", "");
+        };
 
-    // -----------------------------
-    // Eventi UI
-    // -----------------------------
-    // Hover: controlli solo quando playing e non fullscreen
-    video.addEventListener("mouseenter", () => {
-      if (!isFullscreen() && !video.paused && !video.ended) showControls();
-    });
-    video.addEventListener("mouseleave", () => {
-      if (!isFullscreen() && !video.paused && !video.ended) hideControls();
-    });
+        const hideControls = () => {
+          if (video.hasAttribute("controls")) video.removeAttribute("controls");
+        };
 
-    // Click sull'overlay: play
-    overlay.addEventListener("click", (e) => {
-      e.preventDefault();
-      tryPlay();
-    });
-    overlay.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        tryPlay();
-      }
-    });
+        const showOverlay = () => {
+          overlay.style.display = "flex";
+        };
 
-    // Click sul video quando è fermo: play (comodo su mobile)
-    video.addEventListener("click", () => {
-      if (!isFullscreen() && (video.paused || video.ended)) tryPlay();
-    });
+        const hideOverlay = () => {
+          overlay.style.display = "none";
+        };
 
-    // Double click → fullscreen (come prima)
-    video.addEventListener("dblclick", async (e) => {
-      e.preventDefault();
-      await requestFs();
-    });
+        const syncUI = () => {
+          const fs = isFullscreen();
+          const pausedOrEnded = video.paused || video.ended;
 
-    // Stato video
-    video.addEventListener("play", syncUI);
-    video.addEventListener("pause", syncUI);
-    video.addEventListener("ended", syncUI);
+          // Overlay SOLO quando NON fullscreen e NON in riproduzione
+          if (!fs && pausedOrEnded) showOverlay();
+          else hideOverlay();
 
-    // Fullscreen changes (standard + Safari)
-    document.addEventListener("fullscreenchange", syncUI);
-    document.addEventListener("webkitfullscreenchange", syncUI);
+          // Controlli:
+          // - In fullscreen: sempre visibili
+          // - Fuori fullscreen: visibili solo in hover quando in riproduzione
+          if (fs) {
+            showControls();
+          } else {
+            if (!pausedOrEnded) {
+              // playing inline: hover-based
+              hideControls();
+            } else {
+              // paused inline: niente controlli, solo overlay
+              hideControls();
+            }
+          }
+        };
 
-    // Stato iniziale
-    hideControls();
-    syncUI();
-  });
-</script>
+        // -----------------------------
+        // Azioni
+        // -----------------------------
+        const tryPlay = async () => {
+          try {
+            await video.play();
+          } catch (err) {
+            // autoplay/gesture restrictions: niente panico, rimane overlay
+            console.warn("Play failed:", err);
+          }
+        };
+
+        const requestFs = async () => {
+          try {
+            if (video.requestFullscreen) await video.requestFullscreen();
+            else if (wrap.requestFullscreen) await wrap.requestFullscreen();
+            else if (video.webkitRequestFullscreen)
+              video.webkitRequestFullscreen(); // Safari
+          } catch (err) {
+            console.warn("Fullscreen failed:", err);
+          }
+        };
+
+        // -----------------------------
+        // Eventi UI
+        // -----------------------------
+        // Hover: controlli solo quando playing e non fullscreen
+        video.addEventListener("mouseenter", () => {
+          if (!isFullscreen() && !video.paused && !video.ended) showControls();
+        });
+        video.addEventListener("mouseleave", () => {
+          if (!isFullscreen() && !video.paused && !video.ended) hideControls();
+        });
+
+        // Click sull'overlay: play
+        overlay.addEventListener("click", (e) => {
+          e.preventDefault();
+          tryPlay();
+        });
+        overlay.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            tryPlay();
+          }
+        });
+
+        // Click sul video quando è fermo: play (comodo su mobile)
+        video.addEventListener("click", () => {
+          if (!isFullscreen() && (video.paused || video.ended)) tryPlay();
+        });
+
+        // Double click → fullscreen (come prima)
+        video.addEventListener("dblclick", async (e) => {
+          e.preventDefault();
+          await requestFs();
+        });
+
+        // Stato video
+        video.addEventListener("play", syncUI);
+        video.addEventListener("pause", syncUI);
+        video.addEventListener("ended", syncUI);
+
+        // Fullscreen changes (standard + Safari)
+        document.addEventListener("fullscreenchange", syncUI);
+        document.addEventListener("webkitfullscreenchange", syncUI);
+
+        // Stato iniziale
+        hideControls();
+        syncUI();
+      });
+    </script>
 
     <script>
-  // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
-  (function () {
-    document.addEventListener(
-      "click",
-      function (e) {
-        const btn = e.target.closest("button");
-        if (!btn) return;
-        // lascia finire la navigazione/gesture corrente, poi blur
-        setTimeout(() => btn.blur(), 0);
-      },
-      { passive: true }
-    );
-  })();
-</script>
+      // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
+      (function () {
+        document.addEventListener(
+          "click",
+          function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
+            // lascia finire la navigazione/gesture corrente, poi blur
+            setTimeout(() => btn.blur(), 0);
+          },
+          { passive: true },
+        );
+      })();
+    </script>
   </body>
 </html>
