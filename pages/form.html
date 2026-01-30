@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="../style/variables.css" />
     <link rel="stylesheet" href="../style/form.css" />
+    <link rel="stylesheet" href="../style/var-resp.css" />
+    <link rel="stylesheet" href="../style/form-resp.css" />
 
     <!--tipografia-->
     <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
@@ -46,6 +48,13 @@
           >
             contact us
           </button>
+          <button
+            class="button-text light"
+            id="zhd-btn"
+            onclick="location.href = 'https://www.zerohourday.org'"
+          >
+            zero hour day
+          </button>
         </div>
       </div>
     </header>
@@ -55,15 +64,16 @@
     <main>
       <section class="section-flex" id="first-section">
         <div class="wrap-row-space">
-          <div class="wrap-col-start">
-            <div class="wrap-row-start fit-content">
+          <div class="wrap-col-start fit-content">
+            <div class="wrap-row-start fit-content ">
               <div class="synchro-type fit-content">Request form</div>
-              <div class="selector">
+              <div class="selector fit-content">
                 <div class="body-text fit-content">Select service</div>
                 <select
                   name="product-select"
                   id="product-select"
                   class="body-text selection-box"
+                  style="border-radius: 0px"
                 >
                   <optgroup label="Request Product">
                     <option value="chronodex" selected>Chronodex</option>
@@ -94,10 +104,10 @@
           </div>
           <div class="wrap-col-start" id="product-request">
             <!---->
-            <div class="form-fill">
-              <div class="block">
+            <div class="form-fill   ">
+              <div class="block fit-content">
                 <!---->
-                <select name="entity-select" class="body-text input-box">
+                <select name="entity-select" class="body-text input-box" id="select-2">
                   <option value="" selected disabled class="select-field">
                     Select Applicant type…
                   </option>
@@ -144,13 +154,11 @@
               </div>
             </div>
 
-            <!-- TERMS -->
           </div>
         </div>
 
-        <div class="section-empty"></div>
-        <div class="section-empty"></div>
       </section>
+      <div class="section-empty lastone"></div>
     </main>
     <!--
     FOOTER

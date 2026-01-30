@@ -1,0 +1,159 @@
+/*–––––––––––––––––––––––––––––––––––––
+RESPONSIVE
+–––––––––––––––––––––––––––––––––––––*/
+
+/* smartphone */
+@media screen and (max-width: 768px) {
+  #first-section {
+    height: fit-content;
+    margin-top: 80px;
+  }
+
+  #first-section .wrap-row-space {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .fit-content {
+    width: 100%;
+  }
+
+  .selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: var(--secondary-color);
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+
+  .selector #product-select {
+    width: 100%;
+    height: 2rem;
+  }
+
+  .more-about {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 1.8rem;
+  }
+
+  #product-request {
+    width: 100%;
+    color: var(--secondary-color);
+    overflow: visible;
+  }
+
+  #product-request .form-fill {
+    /* scegli tu l'altezza: vh funziona bene su mobile/tablet */
+    max-height: fit-content;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    /* opzionale: per far scorrere bene su iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 3) .block: tutto visibile, zero scroll interno */
+  #product-request .block {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  #select-2 {
+    width: 100%;
+    height: 2.4rem;
+  }
+
+  .block input {
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 100;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 0.9rem;
+  }
+  .form-btn {
+    width: 100%;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #first-section .wrap-row-space {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .fit-content {
+    width: 100%;
+  }
+
+  .selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: var(--secondary-color);
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+
+  .selector #product-select {
+    width: 100%;
+  }
+
+  .more-about {
+    font-size: 0.8rem;
+    width: 70ch;
+    margin-top: 1.8rem;
+  }
+
+  #product-request {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .block select {
+    font-size: 0.9rem;
+    width: 100%;
+    opacity: 1;
+  }
+
+  #select-2 {
+    width: 100%;
+    height: 2.4rem;
+  }
+
+  .block {
+    overflow-y: visible;
+  }
+
+  .block input {
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 100;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 0.9rem;
+  }
+}

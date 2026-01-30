@@ -79,6 +79,10 @@ RESPONSIVE
     text-align: left;
     width: 100%;
   }
+
+  .lastone {
+    display: none;
+  }
 }
 
 /* tablet */
@@ -90,6 +94,10 @@ RESPONSIVE
   }
   /*header*/
   #zhd-btn {
+    display: block;
+  }
+
+  .lastone {
     display: block;
   }
 }
