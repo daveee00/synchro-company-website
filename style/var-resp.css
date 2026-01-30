@@ -83,6 +83,12 @@ RESPONSIVE
   .lastone {
     display: none;
   }
+
+  .firstone {
+    display: none;
+  }
+
+
 }
 
 /* tablet */
@@ -100,4 +106,7 @@ RESPONSIVE
   .lastone {
     display: block;
   }
+.firstone {
+  display: none;
+}
 }
