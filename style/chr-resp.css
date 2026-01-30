@@ -105,6 +105,10 @@ RESPONSIVE
     width: 100%;
   }
 
+  #carosuel .wrap-carousel .card .wrap .subtitle-caps {
+    text-align: left;
+  }
+
   #video-section {
     position: relative; /* fondamentale */
     height: 28vh;
@@ -264,6 +268,11 @@ nav {
   #carosuel .wrap-carousel .card .wrap .body-text {
     width: 100%;
   }
+
+    #carosuel .wrap-carousel .card .wrap .subtitle-caps {
+    text-align: left;
+  }
+
 
   #video-section {
     position: relative; /* fondamentale */
