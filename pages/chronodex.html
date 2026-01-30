@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--generali-->
-    <title>CHRONODEX© | SYNCHRO®</title>
+    <title>CHRONODEX | SYNCHRO</title>
 
     <!--fogli di stile-->
     <link rel="stylesheet" href="../style/chronodex.css" />
@@ -83,10 +83,10 @@
             <div class="wrap-col-start">
               <div class="synchro-type">designed for <br />a better future</div>
               <div class="body-text">
-                Chronodex is our new machine developed with advanced Synchro
-                technology. Designed for maximum reliability and performance,
-                this innovative system represents a significant step forward in
-                modern engineering.
+                CHRONODEX is the new device developed under the patronage of the
+                United Nations. Engineered to support a global civic effort, it
+                embodies our commitment to precision, accessibility, and the
+                responsible stewardship of time as a shared resource.
               </div>
             </div>
           </div>
@@ -130,17 +130,14 @@
       <section class="section-definied" id="design-choice">
         <div class="wrap-row-end full-width">
           <div class="wrap-col-end">
-            <div class="subtitle-caps">smooth experience</div>
+            <div class="subtitle-caps">purpouse-built</div>
             <div class="body-text">
               <p>
-                the rounded edges enhance comfort when handling the product, a
-                detail that contributes in giving a refined and modern
-                appearance.
-              </p>
-              <p>
-                The surface is carefully refined to achieve a clean and uniform
-                finish. Its color, conveys a neutral yet elegant and minimalist
-                tone.
+                The product is designed to balance visibility and accessibility.
+                Its radius ensures that the interface is recognizable and
+                comfortably usable while remaining compact enough to not feel
+                intrusive. The reduced height emphasizes discretion and ease of
+                interaction.
               </p>
             </div>
           </div>
@@ -167,10 +164,10 @@
                   <div class="wrap-row appear">
                     <div class="body-text">
                       <p>
-                        The 0.5mm round edges enchance comfort when handling the
-                        product, reducing preccure on contact areas and
-                        contributing to a refined appearance, without
-                        sacrificing functionality.
+                        The 0.5mm round edges enhance comfort when handling the
+                        product, reducing pressure on contact areas and
+                        contributing to a more carefully refined appearance,
+                        without having to sacrifice its functionality.
                       </p>
                     </div>
                   </div>
@@ -187,10 +184,10 @@
                   <div class="wrap-row appear">
                     <div class="body-text">
                       <p>
-                        We went with stainless steel for our buttons, to ensure
-                        durability with repetaed use and precision with every
-                        interaction. Their brushed finish effectively
-                        resistwear, preserving a clean appearance over time.
+                        The stainless steel buttons are designed to ensure
+                        durability with repeated use and precision with every
+                        interaction. Their brushed finish effectively resists
+                        wear, preserving a clean appearance over time.
                       </p>
                     </div>
                   </div>
@@ -207,12 +204,10 @@
                   <div class="wrap-row appear">
                     <div class="body-text">
                       <p>
-                        the surface of Chronodex is carefully refined to achieve
-                        a clean and uniform finish.
-                      </p>
-                      <p>
-                        its color conveys a neutral yet elegant and minimalist
-                        tone.
+                        The surface of the product is carefully refined to
+                        achieve a clean and uniform finish. Its texture ensures
+                        grip and enhances tactile feedback. Its grey color
+                        conveys a neutral yet elegant and minimalist tone.
                       </p>
                     </div>
                   </div>
@@ -229,10 +224,10 @@
                   <div class="wrap-row appear">
                     <div class="body-text">
                       <p>
-                        the translucent white elements allow light to emerge
-                        precisely, while black inserts on the surface for
-                        writing and markings allow a clear understanding of the
-                        machine's iknterface.
+                        The translucent white elements allow light to emerge
+                        precisely, while smaller black inserts on the surface
+                        for writing and markings contributo to a clearer
+                        understanding of the product's interface.
                       </p>
                     </div>
                   </div>
@@ -368,13 +363,7 @@
     NAV
     -->
       <nav id="prod-sections">
-        <a
-          href="#"
-          class="subtitle-caps"
-          
-        >
-          Chronodex
-        </a>
+        <a href="#" class="subtitle-caps"> Chronodex </a>
         <div style="display: flex; flex-direction: row; gap: 12px">
           <button
             class="button-text dark"
@@ -429,16 +418,16 @@
     <!--SCRIPTS-->
 
     <!--gestione video-->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const video = document.querySelector("section.video .bg-video");
-    if (!video) return;
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.querySelector("section.video .bg-video");
+        if (!video) return;
 
-    // -----------------------------
-    // CSS (iniettato via script)
-    // -----------------------------
-    const style = document.createElement("style");
-    style.textContent = `
+        // -----------------------------
+        // CSS (iniettato via script)
+        // -----------------------------
+        const style = document.createElement("style");
+        style.textContent = `
       /* wrapper creato via JS */
       .video-preview-wrap {
         position: relative;
@@ -524,169 +513,170 @@
         .video-preview-overlay:hover .video-preview-play { transform: none; }
       }
     `;
-    document.head.appendChild(style);
+        document.head.appendChild(style);
 
-    // -----------------------------
-    // DOM: wrapper + overlay
-    // -----------------------------
-    const wrap = document.createElement("div");
-    wrap.className = "video-preview-wrap";
+        // -----------------------------
+        // DOM: wrapper + overlay
+        // -----------------------------
+        const wrap = document.createElement("div");
+        wrap.className = "video-preview-wrap";
 
-    // Inserisce wrap prima del video e poi sposta video dentro wrap
-    const parent = video.parentElement;
-    parent.insertBefore(wrap, video);
-    wrap.appendChild(video);
+        // Inserisce wrap prima del video e poi sposta video dentro wrap
+        const parent = video.parentElement;
+        parent.insertBefore(wrap, video);
+        wrap.appendChild(video);
 
-    const overlay = document.createElement("div");
-    overlay.className = "video-preview-overlay";
-    overlay.setAttribute("role", "button");
-    overlay.setAttribute("tabindex", "0");
-    overlay.setAttribute("aria-label", "Play video");
+        const overlay = document.createElement("div");
+        overlay.className = "video-preview-overlay";
+        overlay.setAttribute("role", "button");
+        overlay.setAttribute("tabindex", "0");
+        overlay.setAttribute("aria-label", "Play video");
 
-    const playBtn = document.createElement("div");
-    playBtn.className = "video-preview-play";
-    playBtn.setAttribute("aria-hidden", "true");
+        const playBtn = document.createElement("div");
+        playBtn.className = "video-preview-play";
+        playBtn.setAttribute("aria-hidden", "true");
 
-    overlay.appendChild(playBtn);
-    wrap.appendChild(overlay);
+        overlay.appendChild(playBtn);
+        wrap.appendChild(overlay);
 
-    // Imposta il poster sull'overlay (così si vede SEMPRE anche se il video è a metà)
-    const posterUrl = video.getAttribute("poster");
-    if (posterUrl) {
-      overlay.style.setProperty("--poster-url", `url("${posterUrl}")`);
-      // Applichiamo lo sfondo al ::before via style inline (facile e robusto)
-      // Nota: non possiamo settare direttamente ::before, quindi settiamo background sul nodo
-      // e lo usiamo su ::before leggendo computed? più semplice: settiamo background sul nodo e lo copiamo su ::before con CSS? non possibile.
-      // Soluzione pratica: settiamo background sul nodo e lo replichiamo su ::before via CSS usando inherit.
-      // Aggiorniamo CSS per usare inherit:
-      const patch = document.createElement("style");
-      patch.textContent = `
+        // Imposta il poster sull'overlay (così si vede SEMPRE anche se il video è a metà)
+        const posterUrl = video.getAttribute("poster");
+        if (posterUrl) {
+          overlay.style.setProperty("--poster-url", `url("${posterUrl}")`);
+          // Applichiamo lo sfondo al ::before via style inline (facile e robusto)
+          // Nota: non possiamo settare direttamente ::before, quindi settiamo background sul nodo
+          // e lo usiamo su ::before leggendo computed? più semplice: settiamo background sul nodo e lo copiamo su ::before con CSS? non possibile.
+          // Soluzione pratica: settiamo background sul nodo e lo replichiamo su ::before via CSS usando inherit.
+          // Aggiorniamo CSS per usare inherit:
+          const patch = document.createElement("style");
+          patch.textContent = `
         .video-preview-overlay { background-image: var(--poster-url); }
         .video-preview-overlay::before { background-image: inherit; }
       `;
-      document.head.appendChild(patch);
-    }
-
-    // -----------------------------
-    // Helpers stato
-    // -----------------------------
-    const isFullscreen = () =>
-      document.fullscreenElement === video ||
-      document.fullscreenElement === wrap ||
-      document.fullscreenElement === parent ||
-      document.webkitFullscreenElement === video; // Safari
-
-    const showControls = () => {
-      if (!video.hasAttribute("controls")) video.setAttribute("controls", "");
-    };
-
-    const hideControls = () => {
-      if (video.hasAttribute("controls")) video.removeAttribute("controls");
-    };
-
-    const showOverlay = () => {
-      overlay.style.display = "flex";
-    };
-
-    const hideOverlay = () => {
-      overlay.style.display = "none";
-    };
-
-    const syncUI = () => {
-      const fs = isFullscreen();
-      const pausedOrEnded = video.paused || video.ended;
-
-      // Overlay SOLO quando NON fullscreen e NON in riproduzione
-      if (!fs && pausedOrEnded) showOverlay();
-      else hideOverlay();
-
-      // Controlli:
-      // - In fullscreen: sempre visibili
-      // - Fuori fullscreen: visibili solo in hover quando in riproduzione
-      if (fs) {
-        showControls();
-      } else {
-        if (!pausedOrEnded) {
-          // playing inline: hover-based
-          hideControls();
-        } else {
-          // paused inline: niente controlli, solo overlay
-          hideControls();
+          document.head.appendChild(patch);
         }
-      }
-    };
 
-    // -----------------------------
-    // Azioni
-    // -----------------------------
-    const tryPlay = async () => {
-      try {
-        await video.play();
-      } catch (err) {
-        // autoplay/gesture restrictions: niente panico, rimane overlay
-        console.warn("Play failed:", err);
-      }
-    };
+        // -----------------------------
+        // Helpers stato
+        // -----------------------------
+        const isFullscreen = () =>
+          document.fullscreenElement === video ||
+          document.fullscreenElement === wrap ||
+          document.fullscreenElement === parent ||
+          document.webkitFullscreenElement === video; // Safari
 
-    const requestFs = async () => {
-      try {
-        if (video.requestFullscreen) await video.requestFullscreen();
-        else if (wrap.requestFullscreen) await wrap.requestFullscreen();
-        else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen(); // Safari
-      } catch (err) {
-        console.warn("Fullscreen failed:", err);
-      }
-    };
+        const showControls = () => {
+          if (!video.hasAttribute("controls"))
+            video.setAttribute("controls", "");
+        };
 
-    // -----------------------------
-    // Eventi UI
-    // -----------------------------
-    // Hover: controlli solo quando playing e non fullscreen
-    video.addEventListener("mouseenter", () => {
-      if (!isFullscreen() && !video.paused && !video.ended) showControls();
-    });
-    video.addEventListener("mouseleave", () => {
-      if (!isFullscreen() && !video.paused && !video.ended) hideControls();
-    });
+        const hideControls = () => {
+          if (video.hasAttribute("controls")) video.removeAttribute("controls");
+        };
 
-    // Click sull'overlay: play
-    overlay.addEventListener("click", (e) => {
-      e.preventDefault();
-      tryPlay();
-    });
-    overlay.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        tryPlay();
-      }
-    });
+        const showOverlay = () => {
+          overlay.style.display = "flex";
+        };
 
-    // Click sul video quando è fermo: play (comodo su mobile)
-    video.addEventListener("click", () => {
-      if (!isFullscreen() && (video.paused || video.ended)) tryPlay();
-    });
+        const hideOverlay = () => {
+          overlay.style.display = "none";
+        };
 
-    // Double click → fullscreen (come prima)
-    video.addEventListener("dblclick", async (e) => {
-      e.preventDefault();
-      await requestFs();
-    });
+        const syncUI = () => {
+          const fs = isFullscreen();
+          const pausedOrEnded = video.paused || video.ended;
 
-    // Stato video
-    video.addEventListener("play", syncUI);
-    video.addEventListener("pause", syncUI);
-    video.addEventListener("ended", syncUI);
+          // Overlay SOLO quando NON fullscreen e NON in riproduzione
+          if (!fs && pausedOrEnded) showOverlay();
+          else hideOverlay();
 
-    // Fullscreen changes (standard + Safari)
-    document.addEventListener("fullscreenchange", syncUI);
-    document.addEventListener("webkitfullscreenchange", syncUI);
+          // Controlli:
+          // - In fullscreen: sempre visibili
+          // - Fuori fullscreen: visibili solo in hover quando in riproduzione
+          if (fs) {
+            showControls();
+          } else {
+            if (!pausedOrEnded) {
+              // playing inline: hover-based
+              hideControls();
+            } else {
+              // paused inline: niente controlli, solo overlay
+              hideControls();
+            }
+          }
+        };
 
-    // Stato iniziale
-    hideControls();
-    syncUI();
-  });
-</script>
+        // -----------------------------
+        // Azioni
+        // -----------------------------
+        const tryPlay = async () => {
+          try {
+            await video.play();
+          } catch (err) {
+            // autoplay/gesture restrictions: niente panico, rimane overlay
+            console.warn("Play failed:", err);
+          }
+        };
 
+        const requestFs = async () => {
+          try {
+            if (video.requestFullscreen) await video.requestFullscreen();
+            else if (wrap.requestFullscreen) await wrap.requestFullscreen();
+            else if (video.webkitRequestFullscreen)
+              video.webkitRequestFullscreen(); // Safari
+          } catch (err) {
+            console.warn("Fullscreen failed:", err);
+          }
+        };
+
+        // -----------------------------
+        // Eventi UI
+        // -----------------------------
+        // Hover: controlli solo quando playing e non fullscreen
+        video.addEventListener("mouseenter", () => {
+          if (!isFullscreen() && !video.paused && !video.ended) showControls();
+        });
+        video.addEventListener("mouseleave", () => {
+          if (!isFullscreen() && !video.paused && !video.ended) hideControls();
+        });
+
+        // Click sull'overlay: play
+        overlay.addEventListener("click", (e) => {
+          e.preventDefault();
+          tryPlay();
+        });
+        overlay.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            tryPlay();
+          }
+        });
+
+        // Click sul video quando è fermo: play (comodo su mobile)
+        video.addEventListener("click", () => {
+          if (!isFullscreen() && (video.paused || video.ended)) tryPlay();
+        });
+
+        // Double click → fullscreen (come prima)
+        video.addEventListener("dblclick", async (e) => {
+          e.preventDefault();
+          await requestFs();
+        });
+
+        // Stato video
+        video.addEventListener("play", syncUI);
+        video.addEventListener("pause", syncUI);
+        video.addEventListener("ended", syncUI);
+
+        // Fullscreen changes (standard + Safari)
+        document.addEventListener("fullscreenchange", syncUI);
+        document.addEventListener("webkitfullscreenchange", syncUI);
+
+        // Stato iniziale
+        hideControls();
+        syncUI();
+      });
+    </script>
 
     <script src="../scripts/nav-visibility-complete.js"></script>
   </body>
