@@ -69,6 +69,7 @@ RESPONSIVE
   footer {
     height: calc(24vh - 20px);
     flex-direction: column;
+    font-size: 0.7rem;
   }
 
   footer .wrap {
@@ -78,6 +79,10 @@ RESPONSIVE
   footer .right {
     text-align: left;
     width: 100%;
+  }
+
+footer .left{
+    font-size: 0.7rem;
   }
 
   .lastone {

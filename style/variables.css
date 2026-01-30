@@ -190,8 +190,6 @@ section {
   background-repeat: no-repeat;
 }
 
-
-
 /*=====================================*/
 /*=========== main BUTTONS ============*/
 /*=====================================*/
@@ -398,7 +396,6 @@ nav button:hover {
   text-transform: uppercase;
 }
 
-
 /*=====================================*/
 /*============== FOOTER ===============*/
 /*=====================================*/
@@ -447,12 +444,21 @@ footer .right {
 
 footer .footer-link:hover {
   text-decoration: underline;
+  
 }
 
 footer a {
   color: var(--secondary-color);
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 2%;
 }
 
+.footer-text {
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 2%;
+}
 /*=====================================*/
 /*============== WRAPS ================*/
 /*=====================================*/

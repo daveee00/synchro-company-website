@@ -1,0 +1,71 @@
+/*–––––––––––––––––––––––––––––––––––––
+RESPONSIVE
+–––––––––––––––––––––––––––––––––––––*/
+
+/* smartphone */
+@media screen and (max-width: 768px) {
+  .first {
+    height: fit-content;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 80px;
+  }
+
+  .row-width {
+    width: 100%;
+  }
+
+  .text-col {
+    width: 100%;
+    height: fit-content;
+    overflow-y: scroll;
+  }
+
+  .section-flex .subtitle-caps {
+    font-size: 0.8rem;
+  }
+
+  .body-text {
+    width: 100%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .body-text p {
+    width: 100%;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .first {
+    height: fit-content;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .row-width {
+    width: 100%;
+  }
+
+  .text-col {
+    width: 100%;
+    height: fit-content;
+    overflow-y: scroll;
+  }
+
+  .section-flex .subtitle-caps {
+    font-size: 0.8rem;
+  }
+
+  .body-text {
+    width: 100%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .body-text p {
+    width: 100%;
+  }
+}

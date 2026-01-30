@@ -3,9 +3,13 @@
 }
 
 .body-text {
-  width: 100ch;
+  width: fit-content;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.body-text p {
+  width: 100ch;
 }
 
 .first {
@@ -13,11 +17,12 @@
 }
 
 .row-width {
-  width: 100ch;
+  width: 40ch;
 }
 
 .text-col {
-  width: 100ch;
+  width: fit-content;
   height: 64vh;
   overflow-y: scroll;
 }
+
