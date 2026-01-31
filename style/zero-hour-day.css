@@ -14,6 +14,7 @@
 #title-card {
   background: url(../public/zhd/cabina1.png);
   background-size: cover;
+  background-position: center;
   height: 76vh;
 }
 

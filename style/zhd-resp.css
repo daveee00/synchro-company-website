@@ -7,9 +7,10 @@ RESPONSIVE
   #title-card {
     margin-top: 40px;
     width: calc(100vw - 64px);
-    background-position: 60%;
+    background-position: center;
+    background: url(../public/zhd/cabina8.png);
     background-size: cover;
-    height: calc(72vh - 64px);
+    height: calc(76vh - 64px);
     padding: 32px;
     color: var(--primary-color);
   }
@@ -150,7 +151,8 @@ RESPONSIVE
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   #title-card {
-    background-position: 60%;
+    background: url(../public/zhd/cabina3.png);
+    background-position: 40%;
     background-size: cover;
   }
 
