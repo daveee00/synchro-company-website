@@ -115,7 +115,7 @@ header button {
 }
 
 .link-header button:hover {
-  background: var(--secondary-color);
+  background: var(--accent-color);
   cursor: pointer;
 }
 
