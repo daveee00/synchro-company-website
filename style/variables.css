@@ -139,6 +139,9 @@ header button {
   cursor: pointer;
 }
 
+
+
+
 /*=====================================*/
 /*=============== MAIN ================*/
 /*=====================================*/
@@ -595,4 +598,16 @@ header .button-text {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+
+
+
+
+#logo img {
+  height: 19px;
+  width: auto !important;
+  max-width: none;
+  object-fit: contain;
+  display: block;
 }

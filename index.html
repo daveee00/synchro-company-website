@@ -29,8 +29,19 @@
             id="logo"
             class="button-text"
             onclick="location.href = './index.html'"
+            style="width: fit-content"
           >
-            <img src="./public/recurrent/logo.svg" alt="logo" />
+            <img
+              src="./public/recurrent/logo.svg"
+              alt="logo"
+              style="
+                height: 19px;
+                width: auto !important;
+                max-width: none;
+                object-fit: contain;
+                display: block;
+              "
+            />
           </button>
         </div>
 
@@ -66,10 +77,7 @@
       <section
         class="section-definied product-presentation"
         id="chronodex-hero"
-        style="
-          background-position: center;
-          background-size: cover;
-        "
+        style="background-position: center; background-size: cover"
       >
         <div class="wrap-row">
           <div class="wrap-column">
@@ -101,10 +109,7 @@
       <section
         class="section-definied product-presentation"
         id="workflow-hero"
-        style="
-          background-position: center;
-          background-size: cover;
-        "
+        style="background-position: center; background-size: cover"
       >
         <div class="wrap-row">
           <div class="wrap-column">
@@ -136,11 +141,7 @@
       <section
         class="section-definied product-presentation"
         id="deskflow-hero"
-        style="
-
-          background-position: center;
-          background-size: cover;
-        "
+        style="background-position: center; background-size: cover"
       >
         <div class="wrap-row">
           <div class="wrap-column">
@@ -172,10 +173,7 @@
       <section
         class="section-definied product-presentation"
         id="id-hero"
-        style="
-          background-position: center;
-          background-size: cover;
-        "
+        style="background-position: center; background-size: cover"
       >
         <div class="wrap-row">
           <div class="wrap-column">
@@ -278,20 +276,19 @@
     <!--SCRIPTS-->
 
     <script>
-  // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
-  (function () {
-    document.addEventListener(
-      "click",
-      function (e) {
-        const btn = e.target.closest("button");
-        if (!btn) return;
-        // lascia finire la navigazione/gesture corrente, poi blur
-        setTimeout(() => btn.blur(), 0);
-      },
-      { passive: true }
-    );
-  })();
-</script>
-
+      // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
+      (function () {
+        document.addEventListener(
+          "click",
+          function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
+            // lascia finire la navigazione/gesture corrente, poi blur
+            setTimeout(() => btn.blur(), 0);
+          },
+          { passive: true },
+        );
+      })();
+    </script>
   </body>
 </html>
