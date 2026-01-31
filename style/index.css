@@ -51,17 +51,17 @@ footer .wrap .left .footer-small {
 }
 
 #chronodex-hero {
-  background: url(../public/chronodex-page/chrono.png);
+  background: url(../public/chronodex-page/lilla.png);
 }
 
 #deskflow-hero {
-    background: url(../public/deskflow/deskflow2-dk.png);
+    background: url(../public/deskflow/lilla.png);
 }
 
 #id-hero {
-  background: url(../public/index-img/grigio.jpg);
+  background: url(../public/synch-id/lilla.jpg);
 }
 
   #workflow-hero {
-    background: url(../public/index-img/lilla.jpg);
+    background: url(../public/workflow/lilla.jpg);
   }
