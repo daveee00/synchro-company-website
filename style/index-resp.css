@@ -23,6 +23,16 @@ RESPONSIVE
   #zero-hour-section .wrap-row {
     flex-direction: column;
   }
+
+  #deskflow-hero {
+    background: url(../public/deskflow/deskflow2-2.png);
+  }
+
+
+
+  #id-hero {
+    background: url(../public/synch-id/synch-id1-1.png);
+  }
 }
 
 /* tablet */
@@ -32,7 +42,6 @@ RESPONSIVE
     flex-direction: column;
   }
 }
-
 
 /* =========================================================
    NO-FLASH ON TAP (mobile/tablet)

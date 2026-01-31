@@ -49,3 +49,19 @@ footer .wrap .left .footer-small {
   font-size: 0.8rem;
   font-weight: 100;
 }
+
+#chronodex-hero {
+  background: url(../public/chronodex-page/chronodex3.png);
+}
+
+#deskflow-hero {
+    background: url(../public/deskflow/deskflow2-dk.png);
+}
+
+#id-hero {
+  background: url(../public/synch-id/synch-id6.png);
+}
+
+  #workflow-hero {
+    background: url(../public/workflow/workflow2-dk.png);
+  }
