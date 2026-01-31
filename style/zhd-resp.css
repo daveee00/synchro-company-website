@@ -8,15 +8,15 @@ RESPONSIVE
     margin-top: 40px;
     width: calc(100vw - 64px);
     background-position: center;
-    background: url(../public/zhd/cabina9.png);
+    background: url(../public/zhd/cabina10.png);
     background-size: cover;
     height: calc(76vh - 64px);
     padding: 32px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   #title-card .title {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 500;
   }
 
