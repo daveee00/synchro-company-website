@@ -378,12 +378,12 @@
         <a href="#" class="subtitle-caps"> Chronodex </a>
         <div style="display: flex; flex-direction: row; gap: 12px">
           <button
-            class="button-text dark"
+            class="button-secondary button-text dark"
             onclick="location.href = '#techs-land'"
           >
             Techs</button
           ><button
-            class="button-secondary button-text dark"
+            class="button-text dark"
             onclick="location.href = '../pages/form.html'"
           >
             Request
@@ -692,20 +692,20 @@
 
     <script src="../scripts/nav-visibility-complete.js"></script>
 
-        <script>
-  // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
-  (function () {
-    document.addEventListener(
-      "click",
-      function (e) {
-        const btn = e.target.closest("button");
-        if (!btn) return;
-        // lascia finire la navigazione/gesture corrente, poi blur
-        setTimeout(() => btn.blur(), 0);
-      },
-      { passive: true }
-    );
-  })();
-</script>
+    <script>
+      // Rimuove il focus dai bottoni dopo tap/click (utile soprattutto su iOS Safari)
+      (function () {
+        document.addEventListener(
+          "click",
+          function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
+            // lascia finire la navigazione/gesture corrente, poi blur
+            setTimeout(() => btn.blur(), 0);
+          },
+          { passive: true },
+        );
+      })();
+    </script>
   </body>
 </html>

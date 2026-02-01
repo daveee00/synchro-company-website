@@ -6,6 +6,8 @@ RESPONSIVE
 @media screen and (max-width: 768px) {
   .product-presentation .wrap-row {
     flex-direction: column;
+    padding: 1rem;
+    width: calc(100% - 2rem);
   }
 
   .img-wrap {

@@ -4,6 +4,10 @@ RESPONSIVE
 
 /* smartphone */
 @media screen and (max-width: 768px) {
+  main {
+    margin-top: calc(140px);
+  }
+  
   /*SECTIONS*/
 
   section {
@@ -38,7 +42,7 @@ RESPONSIVE
 
   /*header*/
   header {
-    height: fit-content;
+    height: 80px;
     padding: 1rem 20px;
   }
   header .header-wrap {

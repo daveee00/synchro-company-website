@@ -139,9 +139,6 @@ header button {
   cursor: pointer;
 }
 
-
-
-
 /*=====================================*/
 /*=============== MAIN ================*/
 /*=====================================*/
@@ -151,7 +148,7 @@ main {
   height: fit-content;
   flex: 1;
   margin-bottom: 20px;
-  margin-top: calc(64px + 1rem);
+  margin-top: calc(92px);
 
   display: flex;
   flex-direction: column;
@@ -289,7 +286,7 @@ nav .button-secondary {
   border: none;
   opacity: 1;
 
-  border: var(--border-hover);
+  border: var(--border);
 
   text-transform: uppercase;
   color: var(--secondary-color);
