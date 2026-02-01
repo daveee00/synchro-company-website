@@ -107,7 +107,7 @@ header button {
 
   background: none;
   border: none;
-  opacity: 0.6;
+  opacity: 1;
 
   text-transform: uppercase;
 
@@ -204,7 +204,7 @@ main button {
 
   background: var(--secondary-color);
   border: none;
-  opacity: 0.6;
+  opacity: 1;
 
   border: var(--border);
 
@@ -221,7 +221,7 @@ main .button-secondary {
 
   background: none;
   border: none;
-  opacity: 0.6;
+  opacity: 1;
 
   border: var(--border);
 
