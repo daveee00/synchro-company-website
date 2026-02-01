@@ -248,7 +248,9 @@ nav {
   z-index: 200;
   margin-bottom: 4vh;
   background: var(--secondary-color);
-  top: 10vh;
+  /*top: 10vh;*/
+  top: auto;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
