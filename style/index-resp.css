@@ -31,6 +31,10 @@ RESPONSIVE
   }
 
 
+  #workflow-hero {
+    background: url(../public/workflow/lilla1.png);
+  }
+
 
   #id-hero {
     background: url(../public/synch-id/synch-id1-1.png);
@@ -86,4 +90,11 @@ RESPONSIVE
   a:active {
     background-color: transparent;
   }
+
+
+
+    #workflow-hero {
+    background: url(../public/workflow/lilla1.png);
+  }
+
 }
