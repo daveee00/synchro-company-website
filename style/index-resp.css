@@ -97,4 +97,8 @@ RESPONSIVE
     background: url(../public/workflow/lilla1.png);
   }
 
+  #deskflow-hero {
+    background: url(../public/deskflow/lilla-1.png);
+}
+
 }

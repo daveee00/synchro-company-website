@@ -5,6 +5,17 @@
 #hero-sec {
   height: 76vh;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background: url(../public/chronodex-page/lilla-1.png);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    background: url(../public/chronodex-page/lilla-1.png);
+  }
+}
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 #main-info .wrap-col-start {
@@ -53,10 +64,19 @@
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 #design-choice {
-  background: url(../public/chronodex-page/design.png);
+  background: url(../public/chronodex-page/chronodex1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #design-choice {
+    background: url(../public/chronodex-page/chronodex1-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 #design-choice .full-width {
