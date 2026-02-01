@@ -4,14 +4,19 @@ RESPONSIVE
 
 /* smartphone */
 @media screen and (max-width: 768px) {
+
+      main {
+    margin-top: calc(80px);
+  }
+
   #title-card {
-    margin-top: 40px;
     width: calc(100vw - 64px);
     background-position: center;
     background: url(../public/zhd/cabina10.png);
     background-size: cover;
-    height: calc(76vh - 64px);
+    height: calc(76vh);
     padding: 32px;
+    padding-top: 64px ;
     color: var(--secondary-color);
   }
 
