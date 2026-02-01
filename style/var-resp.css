@@ -7,7 +7,7 @@ RESPONSIVE
   main {
     margin-top: calc(140px);
   }
-  
+
   /*SECTIONS*/
 
   section {
@@ -71,24 +71,36 @@ RESPONSIVE
 
   /*footer*/
   footer {
+    width: 100%;
     height: calc(24vh - 20px);
     flex-direction: column;
     font-size: 0.7rem;
   }
 
   footer .wrap {
+    width: 100%;
+    height: fit-content;
     flex-direction: column;
   }
 
   footer .right {
     text-align: left;
-    width: 100%;
-  }
-
-footer .left{
+    width: calc(100% - 32px);
     font-size: 0.7rem;
   }
 
+  footer .left {
+    font-size: 0.7rem;
+    width: calc(100% - 32px);
+  }
+
+  footer .wrap .left .footer-small {
+    font-size: 0.7rem;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
   .lastone {
     display: none;
   }
@@ -98,12 +110,10 @@ footer .left{
   }
 
   nav .button-text {
-  font-size: 0.7rem;
-  font-family: "helvetica-neue-lt-pro", sans-serif;
-  font-weight: 400;
-  color: var(--primary-color);
-}
-
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+  }
 }
 
 /* tablet */
@@ -121,7 +131,7 @@ footer .left{
   .lastone {
     display: block;
   }
-.firstone {
-  display: none;
-}
+  .firstone {
+    display: none;
+  }
 }

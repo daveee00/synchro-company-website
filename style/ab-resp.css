@@ -89,10 +89,42 @@ RESPONSIVE
     width: 72%;
   }
 
-    #payoff .wrap-col-start .body-text {
-        width: 100%;
-    }
+  #payoff .wrap-col-start .body-text {
+    width: 100%;
+  }
 
+  /*footer*/
+  footer {
+    width: 100%;
+    height: calc(24vh - 20px);
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
+
+  footer .wrap {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  footer .right {
+    text-align: left;
+    width: calc(100% - 32px);
+    font-size: 0.7rem;
+  }
+
+  footer .left {
+    font-size: 0.7rem;
+    width: calc(100% - 32px);
+  }
+
+  footer .wrap .left .footer-small {
+    font-size: 0.7rem;
+  }
+
+  footer a {
+    font-size: 0.7rem;
+  }
 }
 
 /* tablet */
@@ -165,7 +197,7 @@ RESPONSIVE
   #values .card .body-text {
     width: 100%;
   }
-    /*–––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /*–––––––––––––––––––––––––––––––––––––––––––––––––*/
 
   #payoff .wrap-row-end {
     width: 100%;
@@ -178,8 +210,7 @@ RESPONSIVE
     width: 72%;
   }
 
-    #payoff .wrap-col-start .body-text {
-        width: 100%;
-    }
-
+  #payoff .wrap-col-start .body-text {
+    width: 100%;
+  }
 }
