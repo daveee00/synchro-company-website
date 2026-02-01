@@ -70,6 +70,28 @@
   background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+
+#design-choice {
+  background: url(../public/synch-id/synch-id5-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+#design-choice {
+  background: url(../public/synch-id/synch-id5-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+}
+
+
 #design-choice .full-width {
   width: 100%;
   padding-bottom: 2rem;
