@@ -2,7 +2,6 @@
    INDEX.CSS
    =========================== */
 
-
 #loader {
   position: fixed;
   top: env(safe-area-inset-top);
@@ -15,22 +14,31 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
   overflow: hidden;
 }
 
-
 #loader .img-wrap {
-  height: 20%;
-  width: 60%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-
+#loader .img-wrap .wrapper {
+  width: 40%;
+  height: 10%;
 }
 
+#loader .img-wrap .wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 /* ===========================
    INDEX.CSS
@@ -89,13 +97,13 @@ footer .wrap .left .footer-small {
 }
 
 #deskflow-hero {
-    background: url(../public/deskflow/lilla.png);
+  background: url(../public/deskflow/lilla.png);
 }
 
 #id-hero {
   background: url(../public/synch-id/lilla-v2.png);
 }
 
-  #workflow-hero {
-    background: url(../public/workflow/lilla.png);
-  }
+#workflow-hero {
+  background: url(../public/workflow/lilla.png);
+}
