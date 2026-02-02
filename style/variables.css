@@ -621,3 +621,24 @@ header .button-text {
   object-fit: contain;
   display: block;
 }
+
+/* =========================================================
+   FIX SCROLL ROOT — UN SOLO SCROLL CONTAINER
+   ========================================================= */
+
+/* Scrolla SOLO html */
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* body NON deve scrollare */
+body {
+  overflow: visible;
+  height: auto;
+  min-height: 100%;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
