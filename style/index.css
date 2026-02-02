@@ -2,6 +2,33 @@
    INDEX.CSS
    =========================== */
 
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2000;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: none;
+}
+
+#loader .img-wrap {
+  height: 20%;
+}
+
+
+
+/* ===========================
+   INDEX.CSS
+   =========================== */
+
 .product-presentation {
   flex-direction: column;
   justify-content: end;
