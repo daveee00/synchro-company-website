@@ -70,6 +70,15 @@
   background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  #design-choice {
+    background: url(../public/chronodex-page/detail3-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   #design-choice {
     background: url(../public/chronodex-page/detail3-1.png);
