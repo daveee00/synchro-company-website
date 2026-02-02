@@ -4,6 +4,16 @@ RESPONSIVE
 
 /* smartphone */
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   main {
     margin-top: calc(140px);
   }
@@ -119,6 +129,16 @@ RESPONSIVE
 /* tablet */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   /*SECTIONS*/
   .section-definied {
     height: calc(44vh - 80px);
