@@ -228,6 +228,23 @@ main .button-secondary {
   transition: var(--animation);
 }
 
+main .button-side {
+  height: 40px;
+  width: fit-content;
+  padding: 12px 20px;
+
+  background: none;
+  border: none;
+  opacity: 1;
+
+  border: var(--border);
+
+  text-transform: uppercase;
+
+  transition: var(--animation);
+}
+
+
 .button-text {
   font-size: 12px;
   font-family: "helvetica-neue-lt-pro", sans-serif;
