@@ -17,64 +17,68 @@
     <!--tipografia-->
     <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
 
-<script>// global-scroll-fix.js
-// Forza lo scroll della pagina quando la wheel finisce su elementi non-scrollabili
-// o su container già a top/bottom (effetto "serve un secondo gesto").
+    <script>
+      // global-scroll-fix.js
+      // Forza lo scroll della pagina quando la wheel finisce su elementi non-scrollabili
+      // o su container già a top/bottom (effetto "serve un secondo gesto").
 
-(function () {
-  function isScrollable(el) {
-    if (!el || el === document.documentElement) return false;
-    const cs = getComputedStyle(el);
-    const oy = cs.overflowY;
-    if (oy !== "auto" && oy !== "scroll") return false;
-    return el.scrollHeight > el.clientHeight + 2;
-  }
+      (function () {
+        function isScrollable(el) {
+          if (!el || el === document.documentElement) return false;
+          const cs = getComputedStyle(el);
+          const oy = cs.overflowY;
+          if (oy !== "auto" && oy !== "scroll") return false;
+          return el.scrollHeight > el.clientHeight + 2;
+        }
 
-  function canScrollInDirection(el, deltaY) {
-    const atTop = el.scrollTop <= 0;
-    const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
-    return deltaY < 0 ? !atTop : !atBottom;
-  }
+        function canScrollInDirection(el, deltaY) {
+          const atTop = el.scrollTop <= 0;
+          const atBottom =
+            el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
+          return deltaY < 0 ? !atTop : !atBottom;
+        }
 
-  function closestScrollable(start) {
-    let el = start;
-    while (el && el !== document.body && el !== document.documentElement) {
-      if (isScrollable(el)) return el;
-      el = el.parentElement;
-    }
-    return null;
-  }
+        function closestScrollable(start) {
+          let el = start;
+          while (
+            el &&
+            el !== document.body &&
+            el !== document.documentElement
+          ) {
+            if (isScrollable(el)) return el;
+            el = el.parentElement;
+          }
+          return null;
+        }
 
-  window.addEventListener(
-    "wheel",
-    (e) => {
-      // ignora pinch/zoom trackpad
-      if (e.ctrlKey) return;
+        window.addEventListener(
+          "wheel",
+          (e) => {
+            // ignora pinch/zoom trackpad
+            if (e.ctrlKey) return;
 
-      const deltaY = e.deltaY;
-      if (deltaY === 0) return;
+            const deltaY = e.deltaY;
+            if (deltaY === 0) return;
 
-      const target = e.target instanceof Element ? e.target : null;
-      const scroller = target ? closestScrollable(target) : null;
+            const target = e.target instanceof Element ? e.target : null;
+            const scroller = target ? closestScrollable(target) : null;
 
-      // Se non c'è uno scroller “reale” sotto al mouse → scrolla sempre la pagina
-      if (!scroller) {
-        // niente preventDefault: lasciamo il comportamento normale
-        return;
-      }
+            // Se non c'è uno scroller “reale” sotto al mouse → scrolla sempre la pagina
+            if (!scroller) {
+              // niente preventDefault: lasciamo il comportamento normale
+              return;
+            }
 
-      // Se invece c'è uno scroller ma è già a limite (top/bottom) → scroll della pagina
-      if (!canScrollInDirection(scroller, deltaY)) {
-        e.preventDefault();
-        window.scrollBy({ top: deltaY, left: 0, behavior: "auto" });
-      }
-    },
-    { passive: false }
-  );
-})();
-</script>
-
-    
+            // Se invece c'è uno scroller ma è già a limite (top/bottom) → scroll della pagina
+            if (!canScrollInDirection(scroller, deltaY)) {
+              e.preventDefault();
+              window.scrollBy({ top: deltaY, left: 0, behavior: "auto" });
+            }
+          },
+          { passive: false },
+        );
+      })();
+    </script>
   </head>
 
   <body>
@@ -350,7 +354,7 @@
       })();
     </script>
 
-
-
+<script src="./scripts/no-resize.js">
+</script>
   </body>
 </html>

@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="../style/variables.css" />
     <link rel="stylesheet" href="../style/location.css" />
+    <link rel="stylesheet" href="../style/var-resp.css">
+    <link rel="stylesheet" href="../style/loc-resp.css">
+
+    
 
     <!--tipografia-->
     <link rel="stylesheet" href="https://use.typekit.net/onf3tub.css" />
@@ -20,9 +24,9 @@
     <!--
     HEADER
     -->
-      <header>
-        <div class="header-wrap">
-          <div class="link-header">
+    <header>
+      <div class="header-wrap">
+        <div class="link-header">
           <button
             id="logo"
             class="button-text"
@@ -41,23 +45,40 @@
               "
             />
           </button>
-          </div>
-
-          <div class="link-header title-card">
-            <button class="button-text light" onclick="location.href='../pages/about.html'">about</button>
-
-            <button class="button-text light" onclick="location.href='../pages/form.html'">contact us</button>
-          </div>
         </div>
-      </header>
+
+        <div class="link-header title-card">
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/about.html'"
+          >
+            about
+          </button>
+
+          <button
+            class="button-text light"
+            onclick="location.href = '../pages/form.html'"
+          >
+            contact us
+          </button>
+          <button
+            class="button-text light"
+            id="zhd-btn"
+            onclick="location.href = 'https://www.zerohourday.org'"
+          >
+            zero hour day
+          </button>
+        </div>
+      </div>
+    </header>
     <!--
     MAIN
     -->
     <main>
-      <section class="section-flex">
-        <div class="wrap-row-space first-row">
-          <div class="wrap-col-start">
-            <div class="wrap-row-start fit-content" >
+      <section class="section-flex" id="container">
+        <div class="wrap-row-space first-row  ">
+          <div class="wrap-col-start  ">
+            <div class="wrap-row-start fit-content " >
               <div class="synchro-type fit-content">
                 find polls
               </div>
@@ -70,12 +91,12 @@
             </div>
             <!---->
           </div>
-          <div class="wrap-col-start" id="product-request">
+          <div class="wrap-col-start " id="product-request">
             <!---->
             <div class="form-fill">
-              <div class="block">
+              <div class="block ">
                 <!---->
-                <div class="section-empty"></div>
+                <div class="section-empty lastone"></div>
                 <input type="search" placeholder="Enter Location or ZIP-code…" />
                 <!---->
                 <div class="section-empty"></div>
@@ -149,5 +170,10 @@
     );
   })();
 </script>
+
+<script src="../scripts/no-resize.js">
+</script>
+
+
   </body>
 </html>

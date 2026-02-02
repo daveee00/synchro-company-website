@@ -2,13 +2,18 @@
   width: fit-content;
 }
 
+#container {
+  min-height: 64vh;
+}
+
+
 .first-row {
   width: 100%;
 }
 
 .form-fill {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,6 +23,7 @@
   background-size: cover;
   overflow: auto;
 }
+
 
 .block {
   display: flex;
@@ -93,3 +99,11 @@
 .result-line:hover .subtitle {
   text-decoration: underline;
 }
+
+#product-request {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
