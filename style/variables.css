@@ -21,6 +21,7 @@ body {
 
   --border: 1px solid var(--secondary-color);
   --border-hover: 1.5px solid var(--accent-color);
+  --border-black: 1.5px solid var(--primary-color);
 }
 
 a {
@@ -220,7 +221,7 @@ main .button-secondary {
   border: none;
   opacity: 1;
 
-  border: var(--border);
+  border: var(--border-black);
 
   text-transform: uppercase;
 
@@ -286,7 +287,7 @@ nav .button-secondary {
   border: none;
   opacity: 1;
 
-  border: var(--border);
+  border: var(--border-black);
 
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -449,7 +450,6 @@ footer .right {
 
 footer .footer-link:hover {
   text-decoration: underline;
-  
 }
 
 footer a {
@@ -597,10 +597,6 @@ header .button-text {
   letter-spacing: 0.02em;
 }
 
-
-
-
-
 #logo img {
   height: 19px;
   width: auto !important;
@@ -608,3 +604,6 @@ header .button-text {
   object-fit: contain;
   display: block;
 }
+
+
+
