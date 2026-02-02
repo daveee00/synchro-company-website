@@ -209,3 +209,13 @@
   flex-direction: column;
   justify-content: end;
 }
+
+
+
+
+#button-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+}

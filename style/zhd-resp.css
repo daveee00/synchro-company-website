@@ -208,7 +208,7 @@ RESPONSIVE
   }
 
   #chrono-img {
-    display: none;
+    display: block;
   }
 
   #use .wrap-col-start {
